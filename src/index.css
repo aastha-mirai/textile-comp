@@ -1,1 +1,119 @@
 @import "tailwindcss";
+
+/* Root-level CSS variables for gradients used across the app */
+:root {
+	--font-poppins: "Poppins", sans-serif;
+
+	--whatsapp-gradient: linear-gradient(180deg, #0CDC74, #005A2D);
+	--theme-gradient: linear-gradient(180deg, #2563EB, #765AC9);
+}
+
+body {
+	font-family: var(--font-poppins);
+}
+
+@theme {
+	--color-primary: #2563EB;
+	--color-secondary: #1A1A24;
+	--color-white: #ffffff;
+	--color-offWhite: #D9D9D9;
+	--color-whiteSmoke: #F5F5F5;
+	--color-lightGray: #747474;
+	--color-darkGray: #363636;
+	--color-lightGreen: #0CDC74;
+	--color-darkGreen: #005A2D;
+	--color-brightBlue: #2563EB;
+	--color-vividPurple: #765AC9;
+}
+
+/* Utility classes for applying custom gradient backgrounds */
+@layer utilities {
+	.bg-whatsapp-gradient {
+		background: var(--whatsapp-gradient);
+	}
+
+	.bg-theme-gradient {
+		background: var(--theme-gradient);
+	}
+
+	.text-theme-gradient {
+		background: var(--theme-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+
+	/* Registers Poppins font family with multiple weight variants */
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+		font-weight: 100;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+		font-weight: 200;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Regular.woff2") format("woff2");
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Medium.woff2") format("woff2");
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Bold.woff2") format("woff2");
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+		font-weight: 800;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: "Poppins";
+		src: url("/fonts/Poppins-Thin.woff2") format("woff2");
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap;
+	}
+}
