@@ -19,6 +19,7 @@ export const iconColor = {
   darkGreen: "--color-darkGreen",
   brightBlue: "--color-brightBlue",
   vividPurple: "--color-vividPurple",
+  inherit: "inherit",
 } as const;
 
 /** A union type representing all valid theme color names used in the iconColor map */
