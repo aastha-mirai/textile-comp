@@ -26,7 +26,8 @@ export type TypoColor =
   | "lightGreen"
   | "darkGreen"
   | "brightBlue"
-  | "vividPurple";
+  | "vividPurple"
+  | "inherit";
 
 /** Maps font weights to their corresponding Tailwind css classes */
 export type FontWeight = "regular" | "medium" | "bold";
@@ -44,6 +45,7 @@ export const colorClasses: Record<TypoColor, string> = {
   darkGreen: "text-darkGreen",
   brightBlue: "text-brightBlue",
   vividPurple: "text-vividPurple",
+  inherit: "text-inherit",
 };
 
 /** Map each variant to its font size (without weight) */
