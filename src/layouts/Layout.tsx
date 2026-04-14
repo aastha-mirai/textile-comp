@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   return (
     <div className="relative">
-      <header className="absolute top-0 left-0 w-full bg-transparent">
+      <header className="absolute top-0 left-0 w-full">
         <Topbar />
         <Navbar />
       </header>
