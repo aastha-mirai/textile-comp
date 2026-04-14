@@ -1,5 +1,6 @@
 import heroBg from "@assets/imgs/hero-section-bg-image.webp";
 import { PageHero } from "@components";
+import { About } from "@containers";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
         titleVariant="h1"
         title="MS FABRICATION & INDUSTRIAL EQUIPMENT MANUFACTURER"
       />
+      <About />
     </div>
   );
 };
