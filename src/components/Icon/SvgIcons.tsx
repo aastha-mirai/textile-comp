@@ -3,6 +3,25 @@ import type { IconSize } from "./Icon.types";
 // Storing Icons as key value pairs and Exporting a collection of SVG icons as react elements
 
 export const icons = {
+  circleTheme: (size: IconSize) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 18 18"
+      fill="none"
+    >
+      <rect x="0.5" y="0.5" width="17" height="17" rx="8.5" stroke="#4552F5" />
+      <rect
+        x="2.68103"
+        y="2.34784"
+        width="12.6383"
+        height="13.3043"
+        rx="6.31915"
+        fill="#2859C5"
+      />
+    </svg>
+  ),
   phone: (size: IconSize) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
