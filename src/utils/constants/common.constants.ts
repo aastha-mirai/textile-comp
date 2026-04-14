@@ -3,5 +3,5 @@ export const SOCIAL_ICON_LINKS = {
   LINKEDIN: "#",
   INSTAGRAM: "#",
   FACEBOOK: "#",
+  WHATSAPP: "#",
 };
-

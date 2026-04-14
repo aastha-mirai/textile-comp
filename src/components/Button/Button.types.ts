@@ -22,6 +22,7 @@ export const buttonColors = {
   darkGreen: "--color-darkGreen",
   brightBlue: "--color-brightBlue",
   vividPurple: "--color-vividPurple",
+  "whatsapp-gradient": "whatsapp-gradient",
   inherit: "inherit",
 } as const;
 
