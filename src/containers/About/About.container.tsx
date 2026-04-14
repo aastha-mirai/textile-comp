@@ -16,7 +16,7 @@ const AboutUs = () => {
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-1 lg:pl-4 justify-items-between items-center">
           {/* text-section */}
-          <div className="max-w-5xl flex flex-col justify-between gap-6 lg:mx-auto sm:mx-16 mx-2">
+          <div className="max-w-5xl flex flex-col justify-between gap-6 lg:mx-auto sm:mx-16 mx-4">
             <div className="flex gap-2 items-center">
               <Icon icon="circleTheme" />
               <Typography
