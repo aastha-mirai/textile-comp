@@ -6,6 +6,7 @@
 
 	--whatsapp-gradient: linear-gradient(180deg, #0CDC74, #005A2D);
 	--theme-gradient: linear-gradient(180deg, #2563EB, #765AC9);
+	--light-blue-gradient: linear-gradient(90deg, #ffffff 0%, #ffffff 40%, #2563EB 100%);
 }
 
 body {
@@ -42,6 +43,66 @@ body {
 		-webkit-text-fill-color: transparent;
 		background-clip: text;
 		color: transparent;
+	}
+
+	.text-light-blue-gradient {
+		background: var(--light-blue-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.z-n-level-2 {
+		z-index: -20;
+	}
+
+	.z-n-level-1 {
+		z-index: -10;
+	}
+
+	.z-level-0 {
+		z-index: 0;
+	}
+
+	.z-level-1 {
+		z-index: 100;
+	}
+
+	.z-level-2 {
+		z-index: 200;
+	}
+
+	.z-level-3 {
+		z-index: 300;
+	}
+
+	.z-level-4 {
+		z-index: 400;
+	}
+
+	.z-level-5 {
+		z-index: 500;
+	}
+
+	.z-level-6 {
+		z-index: 600;
+	}
+
+	.z-level-7 {
+		z-index: 700;
+	}
+
+	.z-level-8 {
+		z-index: 800;
+	}
+
+	.z-level-9 {
+		z-index: 900;
+	}
+
+	.z-level-10 {
+		z-index: 999;
 	}
 
 	/* Registers Poppins font family with multiple weight variants */

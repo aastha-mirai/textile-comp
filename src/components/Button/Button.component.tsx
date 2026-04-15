@@ -65,6 +65,8 @@ const Button: React.FC<ButtonProps> = (props) => {
     bgColor,
     textColor,
     radius = "sm",
+    uppercase,
+    weight,
 
     ...rest
   } = props;
@@ -72,7 +74,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   const isIconOnly = !text;
 
   /** Dynamically generate class names based on size, loading state and disabled state. */
-  const buttonClasses = `relative inline-flex items-center justify-center gap-3  ${bgColor ?? "bg-theme-gradient"} ${textColor ?? "text-white"} ${isIconOnly ? "rounded-full" : radiusClasses[radius ?? "sm"]} ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"} ${isIconOnly ? iconOnlySizeClasses[size === "sm" || size === "md" ? size : "md"] : sizeClasses[size]} ${isShadow ? "hover:shadow-2xl" : ""}`;
+  const buttonClasses = `relative inline-flex items-center justify-center gap-3  bg-${bgColor ?? "theme-gradient"} ${textColor ?? "text-white"} ${isIconOnly ? "rounded-full" : radiusClasses[radius ?? "sm"]} ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"} ${isIconOnly ? iconOnlySizeClasses[size === "sm" || size === "md" ? size : "md"] : sizeClasses[size]} ${isShadow ? "hover:shadow-2xl" : ""}`;
 
   /** Determine icon size based on button state */
   const iconSize = isIconOnly ? (size === "md" ? 24 : 20) : 24;
@@ -86,7 +88,15 @@ const Button: React.FC<ButtonProps> = (props) => {
       {...rest}
     >
       <>
-        {text && <Typography variant="subtitle" text={text} color="inherit" />}
+        {text && (
+          <Typography
+            variant="subtitle"
+            text={text}
+            color="inherit"
+            uppercase={uppercase}
+            weight={weight}
+          />
+        )}
         {iconName && (
           <Icon icon={iconName} size={iconSize} cursorPointer color="inherit" />
         )}

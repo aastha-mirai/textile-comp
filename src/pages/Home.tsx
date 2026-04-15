@@ -1,14 +1,15 @@
-import { Typography } from "@components";
+import heroBg from "@assets/imgs/hero-section-bg-image.webp";
+import { PageHero } from "@components";
 
 const HomePage = () => {
   return (
-    <div className="w-full h-screen pt-16 md:pt-28 bg-black">
-      <Typography
-        variant="h1"
-        text="Welcome to the Home Page"
-        weight="bold"
-        color="white"
-        textShadow
+    <div className="w-full h-screen pt-16 md:pt-28">
+      <PageHero
+        height="h-[640px]"
+        bgImage={heroBg}
+        titleWidth="3/4"
+        titleVariant="h1"
+        title="High-Quality MS Fabrication & Industrial Equipment Solutions"
       />
     </div>
   );

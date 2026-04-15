@@ -27,7 +27,8 @@ export type TypoColor =
   | "darkGreen"
   | "brightBlue"
   | "vividPurple"
-  | "inherit";
+  | "inherit"
+  | "whatsapp-gradient";
 
 /** Maps font weights to their corresponding Tailwind css classes */
 export type FontWeight = "regular" | "medium" | "bold";
@@ -45,6 +46,7 @@ export const colorClasses: Record<TypoColor, string> = {
   darkGreen: "text-darkGreen",
   brightBlue: "text-brightBlue",
   vividPurple: "text-vividPurple",
+  "whatsapp-gradient": "text-whatsapp-gradient",
   inherit: "text-inherit",
 };
 

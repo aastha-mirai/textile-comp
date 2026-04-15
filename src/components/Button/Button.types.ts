@@ -1,4 +1,4 @@
-import type { IconName } from "@components";
+import type { FontWeight, IconName } from "@components";
 
 /** Available size variants for the Button component */
 export type ButtonSize = "sm" | "md" | "lg" | "xl";
@@ -22,6 +22,7 @@ export const buttonColors = {
   darkGreen: "--color-darkGreen",
   brightBlue: "--color-brightBlue",
   vividPurple: "--color-vividPurple",
+  "whatsapp-gradient": "whatsapp-gradient",
   inherit: "inherit",
 } as const;
 
@@ -43,4 +44,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   textColor?: ButtonColor;
   /** Border radius variant of the button. */
   radius?: ButtonRadius;
+  /** If true, transforms the text to uppercase. */
+  uppercase?: boolean;
+  /** Optional font weight for the text in the button. */
+  weight?: FontWeight;
 }
