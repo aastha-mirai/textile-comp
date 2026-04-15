@@ -10,18 +10,18 @@ const ProductCard: React.FC<CardItem> = (props) => {
   return (
     <button 
       onClick={() => {}}
-      className="flex  gap-4 px-2 pb-6 justify-between overflow"
+      className="flex gap-4 px-2 pb-6 justify-between"
     >
-      <div className="w-xs h-[403px] text-center shadow-xl rounded">
-        <div className="w-xs h-72">
+      <div className="w-xs h-[400px] text-center shadow-xl rounded">
+        <div className="h-72">
           <img
             src={image}
             alt={title} 
-            className="w-full h-full object-cover border-b  border-lightGray"
+            className="w-full h-full object-cover border-b border-lightGray"
           />
         </div>
         <div>
-          <div className="mt-2 mb-2 text-center">
+          <div className="my-2 text-center">
             <Typography variant="headline" text={title} weight="medium" />
           </div>
 
