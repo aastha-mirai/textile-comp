@@ -65,6 +65,8 @@ const Button: React.FC<ButtonProps> = (props) => {
     bgColor,
     textColor,
     radius = "sm",
+    uppercase,
+    weight,
 
     ...rest
   } = props;
@@ -86,7 +88,15 @@ const Button: React.FC<ButtonProps> = (props) => {
       {...rest}
     >
       <>
-        {text && <Typography variant="subtitle" text={text} color="inherit" />}
+        {text && (
+          <Typography
+            variant="subtitle"
+            text={text}
+            color="inherit"
+            uppercase={uppercase}
+            weight={weight}
+          />
+        )}
         {iconName && (
           <Icon icon={iconName} size={iconSize} cursorPointer color="inherit" />
         )}
