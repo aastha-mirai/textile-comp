@@ -60,7 +60,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="relative group inline-block "
+                className="relative group inline-block"
               >
                 <Typography
                   variant={isMobile ? "caption" : "subtitle"}
