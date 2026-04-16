@@ -3,3 +3,4 @@ export * from "./Navbar";
 export * from "./AboutUs";
 export * from "./Feature";
 export * from "./Product";
+export * from "./WhyChooseUs";

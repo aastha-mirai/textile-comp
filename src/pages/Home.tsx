@@ -1,6 +1,6 @@
 import heroBg from "@assets/imgs/hero-section-bg-image.webp";
 import { PageHero } from "@components";
-import { AboutUs, Feature, Product } from "@containers";
+import { AboutUs, Feature, Product, WhyChooseUs } from "@containers";
 
 const HomePage = () => {
   return (
@@ -15,6 +15,7 @@ const HomePage = () => {
       <AboutUs />
       <Feature />
       <Product />
+      <WhyChooseUs />
     </div>
   );
 };
