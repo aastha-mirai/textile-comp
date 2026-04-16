@@ -1,4 +1,4 @@
-import ProductCads from "./ProductCard.components"
+import ProductCard from "./ProductCard.components";
 
-export {ProductCads} 
-export * from "./ProductCard.types"
+export {ProductCard};
+export * from "./ProductCard.types";
