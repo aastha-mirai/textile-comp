@@ -1,7 +1,7 @@
 import type { IconName, TypoColor } from "@components";
 
 /** Available size variants for the Button component */
-export type ButtonSize = "sm" | "md" | "lg" | "xl" | "full";
+export type ButtonSize = "sm" | "md" | "lg" | "xl";
 
 /** Available size variants for icon-only buttons */
 export type IconBtnSize = "sm" | "md";
