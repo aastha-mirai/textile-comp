@@ -11,6 +11,7 @@ const sizeClasses: Record<ButtonSize, string> = {
   md: "px-11 py-3",
   lg: "px-14 py-2",
   xl: "px-15 py-4",
+  full: "py-2 w-full",
 };
 
 const iconOnlySizeClasses: Record<IconBtnSize, string> = {

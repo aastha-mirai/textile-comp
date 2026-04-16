@@ -1,7 +1,7 @@
 import type { IconName } from "@components";
 
 /** Available size variants for the Button component */
-export type ButtonSize = "sm" | "md" | "lg" | "xl";
+export type ButtonSize = "sm" | "md" | "lg" | "xl" | "full";
 
 /** Available size variants for icon-only buttons */
 export type IconBtnSize = "sm" | "md";
