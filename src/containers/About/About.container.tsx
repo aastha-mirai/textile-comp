@@ -11,12 +11,12 @@ const AboutUs = () => {
   return (
     <section
       aria-label="About Us Section"
-      className="w-full py-20 overflow-hidden"
+      className="w-full pt-9 pb-8 md:py-18 overflow-hidden"
     >
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-1 lg:pl-4 justify-items-between items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-1 lg:pl-4 justify-items-between items-center">
           {/* text-section */}
-          <div className="max-w-5xl flex flex-col justify-between gap-6 lg:mx-auto sm:mx-16 mx-4">
+          <div className="max-w-5xl flex flex-col justify-between gap-6 lg:mx-auto sm:mx-16 mx-5 order-2 lg:order-1">
             <div className="flex gap-2 items-center">
               <Icon icon="circleTheme" />
               <Typography
@@ -55,7 +55,7 @@ const AboutUs = () => {
               <Button
                 text="Learn More"
                 iconName="arrowRight"
-                size="md"
+                size="sm"
                 bgColor="primary"
                 isShadow
                 onClick={() => navigate(ROUTES.ABOUT)}
@@ -63,7 +63,7 @@ const AboutUs = () => {
             </div>
           </div>
           {/* img-section */}
-          <div className="flex justify-center max-h-96 mx-4 lg:m-auto">
+          <div className="flex justify-center max-h-96 mx-4 lg:m-auto order-1 lg:order-2">
             <div className="shadow-lg rounded-tl-[50px] rounded-br-[50px] overflow-hidden">
               <img
                 src={mainImage}
