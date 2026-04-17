@@ -1,15 +1,17 @@
 import aboutBg from "@assets/imgs/about-section-bg-image.webp";
 import { PageHero } from "@components";
+import { AboutUs } from "@containers";
 
 const About = () => {
   return (
-    <div className="w-full h-screen pt-16 md:pt-28">
+    <div>
       <PageHero
         height="h-96"
         bgImage={aboutBg}
         titleWidth="3/4"
         title="Quality Products We Offer"
       />
+      <AboutUs />
     </div>
   );
 };
