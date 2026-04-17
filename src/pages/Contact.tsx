@@ -3,7 +3,7 @@ import { PageHero } from "@components";
 
 const Contact = () => {
   return (
-    <div className="w-full h-screen pt-16 md:pt-28">
+    <div>
       <PageHero
         height="h-96"
         bgImage={aboutBg}
