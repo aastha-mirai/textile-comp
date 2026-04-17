@@ -1,12 +1,22 @@
 import { Icon, Typography } from "@components";
 import type { FeatureStatsCardData } from "./FeatureStat.types";
+import { useScreenSize } from "@utils/useScreenSize";
 
 const FeatureStat: React.FC<FeatureStatsCardData> = (props) => {
-  const { id, icon, text } = props;
+  const { id, icon, text, textVariant, textVariantForMobile } = props;
+  const { isMobile } = useScreenSize();
   return (
-    <div key={id} className="flex items-center justify-center gap-4  min-w-48">
-      <Icon icon={icon} size={48} color="white" />
-      <Typography variant="headline" text={text} color="white" weight="bold" />
+    <div
+      key={id}
+      className="flex items-center justify-center gap-2 md:gap-4 min-w-48"
+    >
+      <Icon icon={icon} size={isMobile ? 24 : 48} color="white" />
+      <Typography
+        variant={isMobile ? textVariantForMobile : textVariant}
+        text={text}
+        color="white"
+        weight="bold"
+      />
     </div>
   );
 };
