@@ -1,4 +1,4 @@
-import type { IconName, TypoColor } from "@components";
+import type { FontWeight, IconName, TypoColor } from "@components";
 
 /** Available size variants for the Button component */
 export type ButtonSize = "sm" | "md" | "lg" | "xl" | "full";

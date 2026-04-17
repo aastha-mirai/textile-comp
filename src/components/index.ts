@@ -4,3 +4,4 @@ export * from "./Icon";
 export * from "./ContactInfo";
 export * from "./SocialIconPanel";
 export * from "./PageHero";
+export * from "./FeatureStat";

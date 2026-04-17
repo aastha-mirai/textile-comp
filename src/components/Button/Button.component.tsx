@@ -91,7 +91,13 @@ const Button: React.FC<ButtonProps> = (props) => {
       >
         <>
           {text && (
-            <Typography variant="subtitle" text={text} color="inherit" />
+            <Typography
+              variant="subtitle"
+              text={text}
+              color="inherit"
+              weight={weight}
+              uppercase={uppercase}
+            />
           )}
           {iconName && (
             <Icon
