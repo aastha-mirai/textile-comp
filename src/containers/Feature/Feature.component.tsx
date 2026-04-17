@@ -5,7 +5,7 @@ const Feature = () => {
   return (
     <section
       aria-label="Stats Section"
-      className="h-auto flex bg-theme-gradient items-center justify-center gap-2 px-1 xl:gap-0 py-6 flex-wrap"
+      className="h-auto flex bg-theme-gradient items-center justify-center gap-4 px-1 xl:gap-0 py-6 flex-wrap"
     >
       {featureStatsCard.map((card, index) => (
         <div key={card.id} className="flex items-center">
