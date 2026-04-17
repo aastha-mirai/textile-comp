@@ -10,7 +10,7 @@ const FeatureStat: React.FC<FeatureStatsCardData> = (props) => {
       key={id}
       className="flex items-center justify-center gap-2 md:gap-4 min-w-48"
     >
-      <Icon icon={icon} size={isMobile ? 48 : 24} color="white" />
+      <Icon icon={icon} size={isMobile ? 24 : 48} color="white" />
       <Typography
         variant={isMobile ? textVariantForMobile : textVariant}
         text={text}
