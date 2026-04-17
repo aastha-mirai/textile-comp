@@ -1,4 +1,4 @@
-import type { IconName } from "@components";
+import type { IconName, TypoColor } from "@components";
 
 /** Available size variants for the Button component */
 export type ButtonSize = "sm" | "md" | "lg" | "xl" | "full";
@@ -11,18 +11,18 @@ export type ButtonRadius = "sm" | "lg";
 
 /** Available color variants for button background and text */
 export const buttonColors = {
-  primary: "--color-primary",
-  secondary: "--color-secondary",
-  white: "--color-white",
-  offWhite: "--color-offWhite",
-  whiteSmoke: "--color-whiteSmoke",
-  lightGray: "--color-lightGray",
-  darkGray: "--color-darkGray",
-  lightGreen: "--color-lightGreen",
-  darkGreen: "--color-darkGreen",
-  brightBlue: "--color-brightBlue",
-  vividPurple: "--color-vividPurple",
-  "whatsapp-gradient": "whatsapp-gradient",
+  primary: "bg-primary",
+  secondary: "bg-secondary",
+  white: "bg-white",
+  offWhite: "bg-offWhite",
+  whiteSmoke: "bg-whiteSmoke",
+  lightGray: "bg-lightGray",
+  darkGray: "bg-darkGray",
+  lightGreen: "bg-lightGreen",
+  darkGreen: "bg-darkGreen",
+  brightBlue: "bg-brightBlue",
+  vividPurple: "bg-vividPurple",
+  "whatsapp-gradient": "bg-whatsapp-gradient",
   inherit: "inherit",
 } as const;
 
@@ -41,7 +41,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   /** Background color variant of the button. */
   bgColor?: ButtonColor;
   /** Text color variant of the button. */
-  textColor?: ButtonColor;
+  textColor?: TypoColor;
   /** Border radius variant of the button. */
   radius?: ButtonRadius;
 }

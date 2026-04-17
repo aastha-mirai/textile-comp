@@ -79,20 +79,29 @@ const Button: React.FC<ButtonProps> = (props) => {
   const iconSize = isIconOnly ? (size === "md" ? 24 : 20) : 24;
 
   return (
-    <button
-      type="button"
-      className={buttonClasses}
-      disabled={disabled}
-      onClick={onClick}
-      {...rest}
-    >
-      <>
-        {text && <Typography variant="subtitle" text={text} color="inherit" />}
-        {iconName && (
-          <Icon icon={iconName} size={iconSize} cursorPointer color="inherit" />
-        )}
-      </>
-    </button>
+    <>
+      <button
+        type="button"
+        className={buttonClasses}
+        disabled={disabled}
+        onClick={onClick}
+        {...rest}
+      >
+        <>
+          {text && (
+            <Typography variant="subtitle" text={text} color="inherit" />
+          )}
+          {iconName && (
+            <Icon
+              icon={iconName}
+              size={iconSize}
+              cursorPointer
+              color="inherit"
+            />
+          )}
+        </>
+      </button>
+    </>
   );
 };
 
