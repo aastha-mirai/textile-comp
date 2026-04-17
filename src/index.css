@@ -6,6 +6,7 @@
 
 	--whatsapp-gradient: linear-gradient(180deg, #0CDC74, #005A2D);
 	--theme-gradient: linear-gradient(180deg, #2563EB, #765AC9);
+	--light-blue-gradient: linear-gradient(90deg, #ffffff 0%, #ffffff 40%, #2563EB 100%);
 }
 
 body {
@@ -38,6 +39,14 @@ body {
 
 	.text-theme-gradient {
 		background: var(--theme-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.text-light-blue-gradient {
+		background: var(--light-blue-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-clip: text;

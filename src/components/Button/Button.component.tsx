@@ -66,6 +66,8 @@ const Button: React.FC<ButtonProps> = (props) => {
     bgColor,
     textColor,
     radius = "sm",
+    uppercase,
+    weight,
 
     ...rest
   } = props;

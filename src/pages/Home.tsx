@@ -6,11 +6,11 @@ const HomePage = () => {
   return (
     <div className="w-full h-screen">
       <PageHero
-        height="h-full"
+        height="h-[640px]"
         bgImage={heroBg}
         titleWidth="3/4"
         titleVariant="h1"
-        title="MS FABRICATION & INDUSTRIAL EQUIPMENT MANUFACTURER"
+        title="High-Quality MS Fabrication & Industrial Equipment Solutions"
       />
       <AboutUs />
     </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-import logoDark from "@assets/svgs/logo-dark.svg";
+import logoWithTextDark from "@assets/svgs/logo-with-text-dark.svg";
 import logoWithText from "@assets/svgs/logo-with-text.svg";
 import {
   Button,
@@ -37,20 +37,8 @@ const Navbar = () => {
         }}
       >
         <Link to={ROUTES.HOME} className="flex items-center">
-          <img src={logoDark} alt="Maa Vindhwasini Enterprises Logo" />
+          <img src={logoWithTextDark} alt="Maa Vindhwasini Enterprises Logo" />
         </Link>
-        <div className="flex flex-col ml-1 leading-[18px] tracking-wider">
-          <Typography
-            text="Maa Vindhwasini"
-            variant={isMobile ? "subtitle" : "headline"}
-            color="secondary"
-          />
-          <Typography
-            text="Enterprises"
-            variant={isMobile ? "body" : "subtitle"}
-            color="secondary"
-          />
-        </div>
       </div>
 
       {/* Mobile menu toggle */}
@@ -58,7 +46,7 @@ const Navbar = () => {
         <Icon
           icon="menu"
           size={24}
-          color="secondary"
+          color="white"
           onClick={() => setMenuOpen((prev) => !prev)}
         />
       </div>
@@ -136,8 +124,8 @@ const Navbar = () => {
                     key={link.to}
                     to={link.to}
                     onClick={() => setMenuOpen(false)}
-                    className={`flex justify-between items-center w-full border-b border-black text-sm px-4 py-3 first:border-t ${
-                      isActive ? "bg-secondary text-white" : "text-white"
+                    className={`flex justify-between items-center w-full border-b border-darkGray text-sm px-4 py-3 first:border-t ${
+                      isActive ? "bg-darkGray text-white" : "text-white"
                     }`}
                   >
                     <Typography

@@ -44,4 +44,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   textColor?: TypoColor;
   /** Border radius variant of the button. */
   radius?: ButtonRadius;
+  /** If true, transforms the text to uppercase. */
+  uppercase?: boolean;
+  /** Optional font weight for the text in the button. */
+  weight?: FontWeight;
 }
