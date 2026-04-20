@@ -28,7 +28,11 @@ const WhyChooseUs = () => {
           {whyChooseUsStat.map((card, index) => (
             <div key={card.id} className="flex items-center">
               <div className="lg:max-w-64">
-                <FeatureStat {...card} />
+                <FeatureStat
+                  {...card}
+                  textVariant="h4"
+                  textVariantForMobile="body"
+                />
               </div>
 
               {/* Divider except last item */}
