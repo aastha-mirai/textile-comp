@@ -1,4 +1,4 @@
-import CapabilitiesCard from "./CapabilitiesCard.components";
+import CapabilitiesCard from "./CapabilitiesCard.component";
 
-export {CapabilitiesCard} 
-export * from "./CapabilitiesCard.types"
+export {CapabilitiesCard}; 
+export * from "./CapabilitiesCard.types";

@@ -1,6 +1,6 @@
 export type CapabilitiesPropsTypes = {
-    id?:number 
-    image:string
-    title:string 
-    des :string []
-}
+  id?: number;
+  image: string;
+  title: string;
+  des: string[];
+};
