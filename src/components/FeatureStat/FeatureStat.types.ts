@@ -4,6 +4,6 @@ export interface FeatureStatsCardData {
   id: number;
   icon: IconName;
   text: string;
-  textVariant?: TypoVariant;
-  textVariantForMobile?: TypoVariant;
+  textVariant: TypoVariant;
+  textVariantForMobile: TypoVariant;
 }
