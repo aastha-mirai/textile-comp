@@ -1,4 +1,4 @@
-import type { IconName, TypoVariant } from "@components";
+import type { FontWeight, IconName, TypoVariant } from "@components";
 
 export interface FeatureStatsCardData {
   id: number;
@@ -6,4 +6,5 @@ export interface FeatureStatsCardData {
   text: string;
   textVariant: TypoVariant;
   textVariantForMobile: TypoVariant;
+  textWeightVariant?: FontWeight;
 }

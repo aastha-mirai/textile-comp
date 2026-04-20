@@ -3,7 +3,14 @@ import type { FeatureStatsCardData } from "./FeatureStat.types";
 import { useScreenSize } from "@utils/useScreenSize";
 
 const FeatureStat: React.FC<FeatureStatsCardData> = (props) => {
-  const { id, icon, text, textVariant, textVariantForMobile } = props;
+  const {
+    id,
+    icon,
+    text,
+    textVariant,
+    textVariantForMobile,
+    textWeightVariant,
+  } = props;
   const { isMobile } = useScreenSize();
   return (
     <div
@@ -15,7 +22,7 @@ const FeatureStat: React.FC<FeatureStatsCardData> = (props) => {
         variant={isMobile ? textVariantForMobile : textVariant}
         text={text}
         color="white"
-        weight="bold"
+        weight={isMobile ? "bold" : (textWeightVariant ?? "bold")}
       />
     </div>
   );

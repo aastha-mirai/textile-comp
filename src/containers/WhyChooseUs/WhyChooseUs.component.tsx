@@ -32,6 +32,7 @@ const WhyChooseUs = () => {
                   {...card}
                   textVariant="h4"
                   textVariantForMobile="body"
+                  textWeightVariant="medium"
                 />
               </div>
 
