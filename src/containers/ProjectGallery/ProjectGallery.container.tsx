@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 import { Button, Icon, Typography } from "@components";
+import { images } from "@mockData";
 import { ROUTES } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
-import { useNavigate } from "react-router-dom";
 
 const ProjectGallery = () => {
   const { isMobile } = useScreenSize();
@@ -36,7 +38,13 @@ const ProjectGallery = () => {
           />
         </div>
       </div>
-      <div className="flex border border-red-800 h-[400px] flex-col items-center w-full mt-12 mb-10 md:my-8 mx-auto"></div>
+      <div className="flex flex-wrap items-center justify-center w-auto mx-1 md:mx-0 gap-3 my-8">
+        {images.slice(0, 7).map((img, index) => (
+          <div key={index} className="h-96 mb-1">
+            <img src={img} className="h-full w-auto object-cover" />
+          </div>
+        ))}
+      </div>
       <div>
         <Button
           text="See All Products"
