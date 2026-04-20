@@ -38,10 +38,14 @@ const ProjectGallery = () => {
           />
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center w-auto mx-1 md:mx-0 gap-3 my-8">
+      <div className="flex md:flex-wrap overflow-x-auto md:overflow-visible items-center md:justify-center w-auto mx-1 md:mx-0 gap-3 my-8">
         {images.slice(0, 7).map((img, index) => (
-          <div key={index} className="h-96 mb-1">
-            <img src={img} className="h-full w-auto object-cover" />
+          <div key={index} className="h-84 flex-shrink-0">
+            <img
+              src={img}
+              className="h-full w-auto object-cover"
+              alt={`product-image-${index}`}
+            />
           </div>
         ))}
       </div>
