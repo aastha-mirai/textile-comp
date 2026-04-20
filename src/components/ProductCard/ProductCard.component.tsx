@@ -9,19 +9,37 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
       tabIndex={0}
       aria-label="Product-Card"
       onClick={onClick}
-      className="flex gap-4 justify-between w-xs min-h-100"
+      className="flex gap-4 justify-between w-xs min-h-100 cursor-pointer"
     >
       <div className="flex flex-col text-center shadow-lg rounded-sm overflow-hidden">
-        <div className="h-80 border-b border-lightGray">
-          <img src={image} alt={title} className="w-full h-full object-contain"/>
+        <div className="h-80 border-b border-offWhite">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-contain"
+          />
         </div>
 
         <div className="mt-2 mb-3 text-center px-2">
-          <Typography variant="headline" text={title} weight="medium"/>
+          <Typography
+            variant="headline"
+            text={title}
+            color="secondary"
+            weight="medium"
+            uppercase
+          />
         </div>
 
         <div className="mt-auto mb-3 w-62 mx-auto">
-          <Button onClick={onClick} text="VIEW DETAILS" iconName="arrowUp" size="full"/>
+          <Button
+            onClick={(e) => {
+              e.stopPropagation();
+              onClick();
+            }}
+            text="VIEW DETAILS"
+            iconName="arrowUp"
+            size="full"
+          />
         </div>
       </div>
     </div>

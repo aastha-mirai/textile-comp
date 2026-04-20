@@ -1,8 +1,17 @@
-import { Button, Icon, Typography } from "@components";
+import { useNavigate } from "react-router-dom";
+
+import { Button, Icon, ProductCard, Typography } from "@components";
+import { productCardData } from "@mockData";
+import { ROUTES } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
 
 const Product = () => {
   const { isMobile } = useScreenSize();
+  const navigate = useNavigate();
+
+  const handleProductClick = (id: number) => {
+    console.log(id);
+  };
   return (
     <section
       aria-label="Our Products Section"
@@ -24,7 +33,7 @@ const Product = () => {
           text="Premium Industrial Product Range"
           color="secondary"
         />
-        <div className="w-4/5">
+        <div className="md:w-4/5">
           <Typography
             variant={isMobile ? "caption" : "subtitle"}
             text="Our products deliver durable, high-performance industrial solutions with precision engineering and reliable quality."
@@ -32,13 +41,24 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="flex border border-red-800 h-[400px] flex-col items-center w-full mt-12 mb-10 md:my-8 mx-auto"></div>
+      <div className="flex overflow-x-auto whitespace-nowrap no-scrollbar md:justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-4 py-3">
+        {productCardData.slice(0, 4).map(({ id, ...cardProps }) => (
+          <div key={id} className="flex-shrink-0">
+            <ProductCard
+              id={id}
+              {...cardProps}
+              onClick={() => handleProductClick(id)}
+            />
+          </div>
+        ))}
+      </div>
       <div>
         <Button
           text="See All Products"
           bgColor="secondary"
           iconName="arrowRight"
           radius="lg"
+          onClick={() => navigate(ROUTES.SERVICES)}
         />
       </div>
     </section>

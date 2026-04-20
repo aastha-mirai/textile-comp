@@ -53,6 +53,15 @@ body {
 		color: transparent;
 	}
 
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
 	.z-n-level-2 {
 		z-index: -20;
 	}
