@@ -1,5 +1,6 @@
 export interface ProductCardProps {
+  id: number;
   title: string;
   image: string;
-  onClick: (e: React.MouseEvent<HTMLElement>) => void;
-};
+  onClick: () => void;
+}
