@@ -3,6 +3,7 @@ import { PageHero } from "@components";
 import {
   AboutUs,
   Feature,
+  Footer,
   Product,
   ProjectGallery,
   WhyChooseUs,
@@ -23,6 +24,7 @@ const HomePage = () => {
       <Product />
       <WhyChooseUs />
       <ProjectGallery />
+      <Footer />
     </div>
   );
 };
