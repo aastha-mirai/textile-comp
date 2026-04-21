@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <section
       aria-label="Why Choose Us Section"
-      className="relative flex items-center justify-center flex-wrap md:pt-11 md:pb-19 py-8 md:px-2 px-5"
+      className="relative flex items-center justify-center flex-wrap md:pt-11 md:pb-19 pt-8 sm:py-8 px-2"
     >
       <img
         src={bgImage}
@@ -24,10 +24,10 @@ const WhyChooseUs = () => {
           weight="bold"
         />
         {/* content */}
-        <div className="flex flex-wrap justify-center gap-12 w-full">
+        <div className="flex flex-wrap justify-center gap-1 sm:gap-8 md:gap-12 w-full">
           {whyChooseUsStat.map((card, index) => (
             <div key={card.id} className="flex items-center">
-              <div className="lg:max-w-64">
+              <div className="lg:max-w-64 pb-8">
                 <FeatureStat
                   {...card}
                   textVariant="h4"
