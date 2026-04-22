@@ -2,16 +2,15 @@ import { Button, Typography, type CapabilitiesPropsTypes } from "@components";
 import { useScreenSize } from "@utils/useScreenSize";
 
 const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
-  const { title, image, des } = props;
+  const { title, image, desc, buttonText } = props;
   const { isMobile } = useScreenSize();
 
   return (
-
-    <div className="flex flex-col md:flex-row shadow-xl gap-4 md:gap-11 w-full md:w-7xl overflow-hidden border border-light-Gray  border-offWhite">
+    <div className="flex flex-col md:flex-row shadow-xl items-center gap-4 md:gap-11 w-full md:w-7xl overflow-hidden border border-offWhite">
       <div className="w-full md:w-md">
-        <img src={image} alt={title} className="w-full h-72 object-cover"/>
+        <img src={image} alt={title} className="w-full h-72 object-cover" />
       </div>
-      <div className="flex flex-col justify-between w-full md:w-3xl mb-4 md:mb-12 md:mt-8 px-3">
+      <div className="flex flex-col justify-between w-full md:w-3xl mb-5 md:mb-12 md:mt-7 px-3">
         <Typography
           variant={isMobile ? "h4" : "h3"}
           weight="bold"
@@ -19,10 +18,15 @@ const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
         />
 
         <div className="w-full ml-3 mt-4">
-          <ul className="list-disc px-4 space-y-4 md:space-y-0">
-            {des.map((des, index) => (
+          <ul className="list-disc px-4 space-y-3 md:space-y-0">
+            {desc.map((des, index) => (
               <li key={index}>
-                <Typography text={des} variant="subtitle" weight="medium" />
+                <Typography
+                  text={des}
+                  variant={isMobile ? "caption" : "subtitle"}
+                  weight="medium"
+                  color="darkGray"
+                />
               </li>
             ))}
           </ul>
@@ -31,7 +35,7 @@ const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
         <div className="mt-5 fit">
           <Button
             onClick={() => {}}
-            text="Request Quotation & Manufacturing"
+            text={buttonText}
             iconName="arrowUp"
             size="sm"
           />
