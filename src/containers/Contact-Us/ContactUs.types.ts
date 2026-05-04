@@ -12,4 +12,3 @@ export interface SocialIconLink {
   to: string;
   icon: IconName;
 }
-

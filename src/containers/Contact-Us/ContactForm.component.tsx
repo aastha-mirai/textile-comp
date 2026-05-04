@@ -43,7 +43,7 @@ export const ContactForm: React.FC = () => {
         </div>
         <div className="w-1/3 border border-primary" />
 
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-10">
           {contactForm.map((field) => {
             const error = formErrors[field.label];
 
@@ -96,7 +96,7 @@ export const ContactForm: React.FC = () => {
             );
           })}
 
-          <div className="md:col-span-2 flex justify-end">
+          <div className="mt-2 md:mt-0 md:col-span-2 flex justify-end">
             <Button
               text="Send Message"
               iconName="arrowRight"
