@@ -102,6 +102,7 @@ export const ContactForm: React.FC = () => {
               iconName="arrowRight"
               size="md"
               type="submit"
+              bgColor="primary"
             />
           </div>
         </form>
