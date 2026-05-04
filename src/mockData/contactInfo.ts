@@ -10,9 +10,9 @@ export const addressInfo: AddressInfoProps = {
 export const contactInfo: ContactInfoProps[] = [
   {
     id: 1,
-    icon: "call",
+    icon: "phone",
     type: "phone",
-    title: "Phone",
+    title: "Call",
     description: "+917004294010",
   },
   {

@@ -1,5 +1,6 @@
 import aboutBg from "@assets/imgs/about-section-bg-image.webp";
 import { PageHero } from "@components";
+import { ContactUs } from "@containers";
 
 const Contact = () => {
   return (
@@ -10,6 +11,7 @@ const Contact = () => {
         titleWidth="3/4"
         title="Request a Quote"
       />
+      <ContactUs />
     </div>
   );
 };
