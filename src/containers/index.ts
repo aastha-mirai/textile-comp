@@ -4,3 +4,4 @@ export * from "./AboutUs";
 export * from "./Feature";
 export * from "./Product";
 export * from "./WhyChooseUs";
+export * from "./ProjectGallery";
