@@ -17,7 +17,7 @@ const Product = () => {
       aria-label="Our Products Section"
       className="flex flex-col items-center w-full mt-12 mb-10 md:my-16"
     >
-      <div className="flex flex-col justify-center items-center gap-5 w-full md:w-3xl text-center">
+      <div className="flex flex-col justify-center items-center gap-5 w-full md:w-3xl text-center px-5">
         <div className="flex items-center gap-2">
           <Icon icon="circleTheme" />
           <Typography
@@ -41,7 +41,7 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="flex overflow-x-auto whitespace-nowrap no-scrollbar md:justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-4 py-3">
+      <div className="flex overflow-x-auto whitespace-nowrap no-scrollbar md:justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-5 py-3">
         {productCardData.slice(0, 4).map(({ id, ...cardProps }) => (
           <div key={id} className="flex-shrink-0">
             <ProductCard

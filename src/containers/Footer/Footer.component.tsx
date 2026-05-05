@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
         />
       </div>
       <div className="py-10">
-        <div className="max-w-7xl mx-auto px-2 sm:px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[3fr_2fr_2fr_1fr_1fr] gap-4 md:gap-4 lg:gap-6">
+        <div className="max-w-7xl mx-auto px-6 sm:px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-[3fr_2fr_2fr_1fr_1fr] gap-4 lg:gap-6">
           {/* Brand + Newsletter */}
           <div className="flex flex-col sm:w-3/4 w-full md:w-full col-span-2 md:col-span-1 gap-6">
             <Link to="/">
