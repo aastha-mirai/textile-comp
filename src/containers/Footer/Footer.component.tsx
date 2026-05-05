@@ -10,12 +10,12 @@ import { addressInfo } from "@mockData";
 
 const quickLinks = [
   { to: ROUTES.ABOUT, text: "About" },
-  { to: ROUTES.SERVICES, text: "Products and Services" },
-  { to: ROUTES.CONTACT, text: "Contact-Us" },
+  { to: ROUTES.SERVICES, text: "Products & Services" },
+  { to: ROUTES.CONTACT, text: "Contact Us" },
   { to: ROUTES.PHOTOS, text: "Photos" },
 ];
 
-const handleAction = ( addressInfo: AddressInfoProps ) => {
+const handleAction = (addressInfo: AddressInfoProps) => {
   const query = encodeURIComponent(addressInfo.description);
   window.open(
     `https://www.google.com/maps/search/?api=1&query=${query}`,
@@ -110,11 +110,11 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col w-36 lg:justify-self-end">
-            <img src={isoLogo} alt="ISO Certification Logo" />
+            <img src={msmeLogo} alt="MSME Certification Logo" />
           </div>
 
           <div className="flex flex-col w-36 lg:justify-self-end">
-            <img src={msmeLogo} alt="MSME Certification Logo" />
+            <img src={isoLogo} alt="ISO Certification Logo" />
           </div>
         </div>
       </div>
