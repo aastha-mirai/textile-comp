@@ -2,7 +2,7 @@ import { Button, Typography, type CapabilitiesPropsTypes } from "@components";
 import { useScreenSize } from "@utils/useScreenSize";
 
 const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
-  const { title, image, desc, buttonText } = props;
+  const { title, image, desc, buttonText, onClick } = props;
   const { isMobile } = useScreenSize();
 
   return (
@@ -34,7 +34,7 @@ const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
 
         <div className="mt-5 fit">
           <Button
-            onClick={() => {}}
+            onClick={onClick}
             text={buttonText}
             iconName="arrowUp"
             size="sm"
