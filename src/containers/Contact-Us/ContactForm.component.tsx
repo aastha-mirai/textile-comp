@@ -49,6 +49,8 @@ export const ContactForm: React.FC = () => {
       return;
     }
 
+    // TODO: Implement form submission logic and remove console log
+
     console.log("Form submitted:", formValues);
 
     setFormValues(
