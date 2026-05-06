@@ -9,8 +9,9 @@ const Product = () => {
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
 
-  const handleProductClick = (id: number) => {
+  const handleProductClick = (id: string) => {
     console.log(id);
+    navigate(`/product/${id}`);
   };
   return (
     <section

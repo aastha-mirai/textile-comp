@@ -5,5 +5,6 @@ export * from "./ContactInfo";
 export * from "./SocialIconPanel";
 export * from "./PageHero";
 export * from "./FeatureStat";
-export * from "./ProductCard"
-export * from "./CapabilitiesCard"
+export * from "./ProductCard";
+export * from "./CapabilitiesCard";
+export * from "./ScrollToTop";

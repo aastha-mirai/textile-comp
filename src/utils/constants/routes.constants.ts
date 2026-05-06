@@ -4,4 +4,5 @@ export const ROUTES = {
   SERVICES: "/services",
   PHOTOS: "/photos",
   CONTACT: "/contact",
+  PRODUCT: "/product/:productId",
 };

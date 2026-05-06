@@ -3,6 +3,7 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import { Layout } from "@layouts";
 import { About, Contact, Home, Photos, Services } from "@pages";
 import { ROUTES } from "@utils/constants";
+import { ProductDetailsPage } from "@containers";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: ROUTES.CONTACT,
         element: <Contact />,
+      },
+      {
+        path: ROUTES.PRODUCT,
+        element: <ProductDetailsPage />,
       },
       {
         path: "*",
