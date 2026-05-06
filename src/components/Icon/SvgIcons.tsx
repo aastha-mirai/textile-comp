@@ -243,8 +243,8 @@ export const icons = {
           y2="7.80005"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#F9F9F9" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="#F9F9F9" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_289_944"
@@ -254,8 +254,8 @@ export const icons = {
           y2="-8.19995"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#07B143" />
-          <stop offset="1" stop-color="#AEFEC0" />
+          <stop stopColor="#07B143" />
+          <stop offset="1" stopColor="#AEFEC0" />
         </linearGradient>
         <clipPath id="clip0_289_944">
           <rect
