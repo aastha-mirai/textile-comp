@@ -24,7 +24,7 @@ const SocialIconPanel: React.FC<SocialIconsProps> = ({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Icon icon={social.icon} size={size} color={color} />
+          <Icon icon={social.icon} size={size} color={color} cursorPointer />
         </a>
       ))}
     </div>

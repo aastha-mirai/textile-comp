@@ -4,7 +4,7 @@ import type { icons } from "./SvgIcons";
 export type IconName = keyof typeof icons;
 
 // IconSize defines the supported icon sizes in pixels.
-export type IconSize = 16 | 20 | 24 | 48 | 68;
+export type IconSize = 16 | 20 | 24 | 48 | 68 | 128;
 
 // Mapping of TypoColor names to CSS variable tokens
 export const iconColor = {

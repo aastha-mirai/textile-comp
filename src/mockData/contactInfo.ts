@@ -1,4 +1,11 @@
-import type { ContactInfoProps } from "@components";
+import type { AddressInfoProps, ContactInfoProps } from "@components";
+
+export const addressInfo: AddressInfoProps = {
+  id: 1,
+  icon: "location",
+  type: "location",
+  description: "Maa Vindhawasini Enterprises Patna - 800026, Bihar, India",
+};
 
 export const contactInfo: ContactInfoProps[] = [
   {
