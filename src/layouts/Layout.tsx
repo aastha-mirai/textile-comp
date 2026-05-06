@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import { Icon } from "@components";
 import { Navbar, Topbar } from "@containers";
@@ -10,6 +10,7 @@ function Layout() {
   const { isMobile } = useScreenSize();
   const [show, setShow] = useState(false);
   const [isFooterVisible, setIsFooterVisible] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,7 @@ function Layout() {
     observer.observe(footer);
 
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
