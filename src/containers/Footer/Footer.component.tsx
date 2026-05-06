@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
   return (
     <footer id="footer" className="relative bg-secondary mt-18 pt-4">
       <div
-        className="absolute right-6 -top-8 lg:-top-16 shadow-lg"
+        className="absolute right-6 -top-8 lg:-top-16"
         aria-label="Contact us at Whatsapp"
       >
         <Icon
