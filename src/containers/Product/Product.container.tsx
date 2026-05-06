@@ -9,7 +9,7 @@ const Product = () => {
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
 
-  const handleProductClick = (id: string) => {
+  const handleProductClick = (id: number) => {
     console.log(id);
     navigate(`/product/${id}`);
   };

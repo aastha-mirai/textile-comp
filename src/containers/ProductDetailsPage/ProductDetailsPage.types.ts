@@ -8,6 +8,7 @@ export type ProductPageData = {
   description: string;
   heroImage: string;
   secondaryImage: string;
+  tertiaryImage?: string;
   keyFunction: {
     title: string;
     text: string;

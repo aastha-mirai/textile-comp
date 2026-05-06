@@ -1,5 +1,5 @@
 export interface ProductCardProps {
-  id: string;
+  id: number;
   title: string;
   image: string;
   onClick: () => void;

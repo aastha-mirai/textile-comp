@@ -9,49 +9,49 @@ import img7 from "@assets/imgs/product-7-fabrication.webp";
 
 export const productCardData: ProductCardProps[] = [
   {
-    id: "glue-kettle",
+    id: 1,
     title: "Resin Kettle MS/HS",
     image: img1,
     onClick: () => {},
   },
   {
-    id: "storage-tank",
+    id: 2,
     title: "Chemical Storage Tank",
     image: img2,
     onClick: () => {},
   },
   {
-    id: "ms-shuttering-plate",
+    id: 3,
     title: "MS Shuttering Plate",
     image: img3,
     onClick: () => {},
   },
   {
-    id: "ms-chimney-fabrication",
+    id: 4,
     title: "MS CHIMNEY FABRICATION",
     image: img4,
     onClick: () => {},
   },
   {
-    id: "linear",
+    id: 5,
     title: "Linear",
     image: img5,
     onClick: () => {},
   },
   {
-    id: "hopper",
+    id: 6,
     title: "Hopper",
     image: img6,
     onClick: () => {},
   },
   {
-    id: "height-gauge",
+    id: 7,
     title: "Height Gauge",
     image: img7,
     onClick: () => {},
   },
   {
-    id: "fabrication",
+    id: 8,
     title: "FABRICATION as per design",
     image: img4,
     onClick: () => {},
