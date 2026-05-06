@@ -6,3 +6,4 @@ export * from "./Product";
 export * from "./WhyChooseUs";
 export * from "./ProjectGallery";
 export * from "./Footer";
+export * from "./Contact-Us";
