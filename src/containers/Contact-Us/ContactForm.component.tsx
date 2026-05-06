@@ -25,6 +25,45 @@ export const ContactForm: React.FC = () => {
     }));
   };
 
+  const validateForm = () => {
+    const errors: Record<string, string> = {};
+
+    contactForm.forEach((field) => {
+      const value = formValues[field.label];
+
+      if (field.isRequired && !value.trim()) {
+        errors[field.label] = `${field.label} is required`;
+      }
+    });
+
+    return errors;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const errors = validateForm();
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    console.log("Form submitted:", formValues);
+
+    setFormValues(
+      contactForm.reduce(
+        (acc, field) => {
+          acc[field.label] = "";
+          return acc;
+        },
+        {} as Record<string, string>,
+      ),
+    );
+
+    setFormErrors({});
+  };
+
   return (
     <>
       <div className="flex flex-col p-4 md:p-8">
@@ -43,7 +82,10 @@ export const ContactForm: React.FC = () => {
         </div>
         <div className="w-1/3 border border-primary" />
 
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-10">
+        <form
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-10"
+        >
           {contactForm.map((field) => {
             const error = formErrors[field.label];
 
@@ -71,7 +113,7 @@ export const ContactForm: React.FC = () => {
                       type={field.type}
                       value={formValues[field.label]}
                       onChange={handleChange}
-                      className="w-full border-b border-offWhite mt-2 px-2 py-1 focus:outline-none focus:ring-none"
+                      className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
                     />
                     <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-[2px] bg-lightGray"></span>
                   </div>
@@ -83,7 +125,7 @@ export const ContactForm: React.FC = () => {
                       rows={1}
                       value={formValues[field.label]}
                       onChange={handleChange}
-                      className="w-full border-b border-offWhite mt-2 px-2 py-1 focus:outline-none focus:ring-none"
+                      className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
                     />
                     <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-[2px] bg-lightGray"></span>
                   </div>
