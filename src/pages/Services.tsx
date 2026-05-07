@@ -1,5 +1,11 @@
 import serviceBg from "@assets/imgs/service-section-bg-image.webp";
 import { PageHero } from "@components";
+import {
+  CapabilitiesSection,
+  Feature,
+  Product,
+  WhyChooseUs,
+} from "@containers";
 
 const Services = () => {
   return (
@@ -10,6 +16,10 @@ const Services = () => {
         titleWidth="3/4"
         title="Quality Fabrication You Can Trust"
       />
+      <Feature />
+      <Product />
+      <WhyChooseUs />
+      <CapabilitiesSection />
     </div>
   );
 };

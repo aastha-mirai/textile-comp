@@ -9,3 +9,4 @@ export * from "./ProductCard";
 export * from "./CapabilitiesCard";
 export * from "./ScrollToTop";
 export * from "./NullState";
+export * from "./SectionBanner";

@@ -1,6 +1,11 @@
 import aboutBg from "@assets/imgs/about-section-bg-image.webp";
-import { PageHero } from "@components";
-import { AboutUs } from "@containers";
+import { PageHero, SectionBanner } from "@components";
+import {
+  AboutUs,
+  CapabilitiesSection,
+  Feature,
+  ProjectGallery,
+} from "@containers";
 
 const About = () => {
   return (
@@ -11,7 +16,11 @@ const About = () => {
         titleWidth="3/4"
         title="Quality Products We Offer"
       />
+      <Feature />
       <AboutUs />
+      <CapabilitiesSection />
+      <SectionBanner />
+      <ProjectGallery />
     </div>
   );
 };

@@ -6,7 +6,7 @@ const CapabilitiesCard: React.FC<CapabilitiesPropsTypes> = (props) => {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className="flex flex-col md:flex-row shadow-xl items-center gap-4 md:gap-11 w-full md:w-7xl overflow-hidden border border-offWhite">
+    <div className="flex flex-col md:flex-row shadow-xl items-center gap-4 md:gap-8 lg:gap-11 w-full md:w-3xl lg:w-5xl xl:w-7xl mx-auto overflow-hidden border border-offWhite">
       <div className="w-full md:w-md">
         <img src={image} alt={title} className="w-full h-72 object-cover" />
       </div>

@@ -8,3 +8,4 @@ export * from "./ProjectGallery";
 export * from "./Footer";
 export * from "./Contact-Us";
 export * from "./ProductDetailsPage";
+export * from "./CapabilitiesSection";
