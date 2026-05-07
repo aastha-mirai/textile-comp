@@ -26,7 +26,15 @@ export type ProductPageData = {
     title: string;
     text: string;
   };
-  cta?: {
+  cta1?: {
+    label: string;
+    href?: string;
+  };
+  cta2?: {
+    label: string;
+    href?: string;
+  };
+  cta3?: {
     label: string;
     href?: string;
   };

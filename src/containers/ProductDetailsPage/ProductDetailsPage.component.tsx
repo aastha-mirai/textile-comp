@@ -41,18 +41,14 @@ const BulletList = ({ items }: { items: BulletItem[] }) => {
         <div key={index} className="flex">
           <div>
             {item.title ? (
-              <div className="flex gap-2 ">
-                <div className="whitespace-nowrap">
-                  <Typography
-                    variant={isMobile ? "body" : "subtitle"}
-                    weight="bold"
-                    text={item.title}
-                  />
-                </div>
-                <Typography
-                  variant={isMobile ? "body" : "subtitle"}
-                  text={item.text}
-                />
+              <div className="flex gap-2">
+                <p className="text-sm md:text-base">
+                  <span className="text-sm md:text-base font-bold">
+                    {item.title}
+                    {": "}
+                  </span>
+                  {item.text}
+                </p>
               </div>
             ) : (
               <Typography
@@ -87,7 +83,7 @@ const ProductDetailsPage = () => {
       />
       <Feature />
       <div className="bg-whiteSmoke">
-        <div className="px-4 py-5 sm:px-6 lg:px-16 lg:pt-11 lg:pb-10 max-w-7xl mx-auto">
+        <div className="px-5 py-6 sm:px-6 lg:px-16 lg:pt-11 lg:pb-10 max-w-7xl mx-auto">
           <div className="mx-auto overflow-hidden gap-11 flex flex-col">
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
               {/* Left content */}
@@ -109,7 +105,7 @@ const ProductDetailsPage = () => {
                 {/* Key function */}
                 <div className="flex gap-5 flex-col">
                   <Typography
-                    variant={isMobile ? "caption" : "headline"}
+                    variant={isMobile ? "headline" : "h4"}
                     text={product.keyFunction.title}
                     weight="bold"
                     color="darkGray"
@@ -131,15 +127,15 @@ const ProductDetailsPage = () => {
                   />
                 </div>
 
-                {product.cta?.label ? (
-                  <Button text={product.cta.label} />
+                {product.cta1?.label ? (
+                  <Button text={product.cta1.label} />
                 ) : null}
               </div>
             </div>
 
             {/* Middle grid */}
             <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8 place-items-center">
-              <div className="order-2 xl:order-1 lg:col-span-5">
+              <div className="order-2 xl:order-1 lg:col-span-5 flex flex-col items-center gap-6">
                 <div className="overflow-hidden">
                   <img
                     src={product.secondaryImage}
@@ -147,6 +143,9 @@ const ProductDetailsPage = () => {
                     className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
                   />
                 </div>
+                {product.cta2?.label ? (
+                  <Button text={product.cta2.label} />
+                ) : null}
               </div>
 
               <div className="order-1 xl:order-2 lg:col-span-7 gap-5 flex flex-col">
@@ -171,7 +170,7 @@ const ProductDetailsPage = () => {
             {/* Bottom sections */}
             <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-8 place-items-center">
               {hasTertiaryImage && (
-                <div className="order-1 xl:order-2 lg:col-span-5">
+                <div className="order-1 xl:order-2 lg:col-span-5 flex flex-col items-center gap-6">
                   <div className="overflow-hidden">
                     <img
                       src={product.tertiaryImage}
@@ -179,10 +178,13 @@ const ProductDetailsPage = () => {
                       className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
                     />
                   </div>
+                  {product.cta3?.label ? (
+                    <Button text={product.cta3.label} />
+                  ) : null}
                 </div>
               )}
               <div
-                className={`order-2 xl:order-1 gap-5 flex flex-col ${hasTertiaryImage ? "lg:col-span-7" : "lg:col-span-12"}`}
+                className={`order-2 xl:order-1 gap-11 md:gap-19 flex flex-col ${hasTertiaryImage ? "lg:col-span-7" : "lg:col-span-12"}`}
               >
                 <section>
                   <SectionTitle>{product.whyChooseUs.title}</SectionTitle>

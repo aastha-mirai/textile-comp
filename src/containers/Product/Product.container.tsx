@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { Button, Icon, ProductCard, Typography } from "@components";
 import { productCardData } from "@mockData";
@@ -6,13 +6,20 @@ import { ROUTES } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
 
 const Product = () => {
+  const { productId } = useParams();
+  const currentProductId = Number(productId);
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
+
+  const filteredProducts = productCardData.filter(
+    (product) => Number(product.id) !== currentProductId,
+  );
 
   const handleProductClick = (id: number) => {
     console.log(id);
     navigate(`/product/${id}`);
   };
+
   return (
     <section
       aria-label="Our Products Section"
@@ -43,7 +50,7 @@ const Product = () => {
         </div>
       </div>
       <div className="flex overflow-x-auto whitespace-nowrap no-scrollbar md:justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-5 py-3">
-        {productCardData.slice(0, 4).map(({ id, ...cardProps }) => (
+        {filteredProducts.slice(0, 4).map(({ id, ...cardProps }) => (
           <div key={id} className="flex-shrink-0">
             <ProductCard
               id={id}

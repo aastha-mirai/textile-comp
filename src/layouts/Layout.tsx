@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 import { Icon } from "@components";
 import { ScrollToTop } from "@components";
-import { Navbar, Topbar } from "@containers";
+import { Footer, Navbar, Topbar } from "@containers";
 import { SOCIAL_ICON_LINKS } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
 
@@ -59,16 +59,17 @@ function Layout() {
         </div>
       )}
       <div className="relative">
-      <ScrollToTop />
-      <header className="absolute top-0 left-0 w-full">
-        <Topbar />
-        <Navbar />
-      </header>
+        <ScrollToTop />
+        <header className="absolute top-0 left-0 w-full">
+          <Topbar />
+          <Navbar />
+        </header>
 
-        <main className="w-full h-screen pt-16 md:pt-28">
+        <main className="w-full pt-16 md:pt-28">
           <Outlet />
         </main>
       </div>
+      <Footer />
     </>
   );
 }

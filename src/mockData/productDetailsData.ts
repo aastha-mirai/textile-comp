@@ -1,12 +1,28 @@
 import type { ProductPageData } from "@containers";
-import glueKettle from "@assets/imgs/product-1-resin-kettle.webp";
+import product1Img1 from "@assets/imgs/products-images/product-1-image1.webp";
+import product1Img2 from "@assets/imgs/products-images/product-1-image2.webp";
+
+import product2Img1 from "@assets/imgs/products-images/product-2-image1.webp";
+import product2Img2 from "@assets/imgs/products-images/product-2-image2.webp";
+import product2Img3 from "@assets/imgs/products-images/product-2-image3.webp";
+
+import product3Img1 from "@assets/imgs/products-images/product-3-image1.webp";
+import product3Img2 from "@assets/imgs/products-images/product-3-image2.webp";
+
+import product4Img1 from "@assets/imgs/products-images/product-4-image1.webp";
+import product4Img2 from "@assets/imgs/products-images/product-4-image2.webp";
+import product4Img3 from "@assets/imgs/products-images/product-4-image3.webp";
+
+import product5Img1 from "@assets/imgs/products-images/product-5-image1.webp";
+import product5Img2 from "@assets/imgs/products-images/product-5-image2.webp";
+import product5Img3 from "@assets/imgs/products-images/product-5-image3.webp";
 
 export const glueKettleData: ProductPageData = {
   heading: "Glue Kettle / Resin Reactor for Plywood Industry",
   description:
     "Our heavy-duty Glue Kettle, also known as a Resin Reactor or Glue Cooking Tank, is an essential piece of equipment for plywood and blockboard manufacturing. It is specifically engineered for the preparation of high-quality adhesives used in wood panel production.",
-  heroImage: glueKettle,
-  secondaryImage: glueKettle,
+  heroImage: product1Img1,
+  secondaryImage: product1Img2,
   keyFunction: {
     title: "Key Function",
     text: "The primary purpose of this kettle is to cook and mix various chemical compounds to produce the adhesive resin that bonds veneer layers together. It is used for preparing Urea-Formaldehyde (UF), Melamine-Urea-Formaldehyde (MUF), and Phenol-Formaldehyde (PF) resins under controlled temperature and agitation.",
@@ -42,7 +58,7 @@ export const glueKettleData: ProductPageData = {
     ],
   },
   whyChooseUs: {
-    title: "Why Choose Us?",
+    title: "Advantages",
     points: [
       {
         title: "Consistent Glue Quality",
@@ -66,7 +82,7 @@ export const glueKettleData: ProductPageData = {
     title: "Applications",
     text: "Ideal for plywood, blockboard, flush door, and veneer manufacturing units for cooking synthetic resin adhesives.",
   },
-  cta: {
+  cta1: {
     label: "Yes, Send me a Quote!",
     href: "#quote",
   },
@@ -77,8 +93,9 @@ export const storageTankData: ProductPageData = {
   description:
     "We manufacture and supply high-quality Mild Steel (MS) Storage Tanks designed for safe and efficient storage of water, chemicals, oils, and other industrial liquids. These tanks are widely used across industries such as water treatment, manufacturing, pharmaceuticals, food processing, and chemical plants.",
 
-  heroImage: glueKettle,
-  secondaryImage: glueKettle,
+  heroImage: product2Img1,
+  secondaryImage: product2Img2,
+  tertiaryImage: product2Img3,
 
   keyFunction: {
     title: "Key Function",
@@ -153,6 +170,18 @@ export const storageTankData: ProductPageData = {
     title: "Applications",
     text: "MS Storage Tanks are widely used for water storage systems, industrial liquid handling, and chemical storage. They are also suitable for oil and fuel storage, as well as effluent and wastewater treatment plants. With proper lining, they can be used in food and pharmaceutical industries.",
   },
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    href: "#quote",
+  },
+  cta2: {
+    label: "Yes, Send me a Quote!",
+    href: "#quote",
+  },
+  cta3: {
+    label: "Yes, Send me a Quote!",
+    href: "#quote",
+  },
 };
 
 export const msHopperData: ProductPageData = {
@@ -161,8 +190,9 @@ export const msHopperData: ProductPageData = {
   description:
     "We manufacture and supply high-quality Mild Steel (MS) hoppers designed for efficient storage, handling, and controlled discharge of bulk materials in industrial environments. These hoppers are widely used in plywood factories, cement plants, chemical industries, and material handling systems.",
 
-  heroImage: "/images/ms-hopper-1.png",
-  secondaryImage: "/images/ms-hopper-2.png",
+  heroImage: product3Img1,
+  secondaryImage: product3Img2,
+  tertiaryImage: product3Img1,
 
   keyFunction: {
     title: "Key Function",
@@ -238,79 +268,9 @@ export const msHopperData: ProductPageData = {
     text: "MS Storage Tanks are widely used for water storage systems, handling industrial process liquids, and storing chemicals and solvents safely. They are also suitable for oil and fuel storage, as well as in effluent and wastewater treatment plants. With appropriate internal lining, these tanks can be effectively used in food and pharmaceutical industries, ensuring safe and hygienic storage conditions.",
   },
 
-  cta: {
+  cta1: {
     label: "Yes, Send me a Quote!",
-  },
-};
-
-export const chimneyData: ProductPageData = {
-  heading: "MS Chimney / Exhaust Stack for Plywood Factory",
-  description:
-    "We manufacture and supply high-quality Mild Steel (MS) Chimneys / Exhaust Stacks specifically designed for plywood, veneer, and blockboard manufacturing units. The chimney is a critical component for venting out flue gases from the thermic fluid heater or boiler used in the plywood pressing process.",
-  heroImage: "/images/ms-chimney-hero.png",
-  secondaryImage: "/images/ms-chimney-secondary.png",
-
-  keyFunction: {
-    title: "Key Function",
-    text: "The chimney provides a safe and efficient outlet for hot flue gases, smoke, and particulate matter generated during the heating process. It creates the necessary draft for proper combustion and ensures compliance with pollution control norms by releasing exhaust at a safe height.",
-  },
-
-  construction: {
-    title: "Construction & Features",
-    points: [
-      {
-        title: "Material of Construction",
-        text: "Fabricated from premium quality Mild Steel (MS) plates of IS 2062 grade. Plate thickness ranges from 6mm to 12mm based on height and diameter to ensure structural stability and long service life.",
-      },
-      {
-        title: "Structure",
-        text: "Modular design. The chimney is fabricated in multiple cylindrical sections as seen in the image, which are then welded or flanged together at the site for easy transportation and erection.",
-      },
-      {
-        title: "Dimensions",
-        text: "Customizable to client requirements. Standard heights range from 30 feet to 100 feet with diameters from 450mm to 1200mm, calculated based on boiler capacity and CPCB guidelines.",
-      },
-      {
-        title: "Key Components",
-        text: "Includes a conical top for rain protection, inspection door at the base, drain point, and a sturdy base plate with foundation bolts for secure grouting.",
-      },
-      {
-        title: "Surface Finish",
-        text: "External surface is treated with a coat of red oxide primer followed by heat-resistant aluminum paint to protect against corrosion and high temperatures.",
-      },
-    ],
-  },
-
-  whyChooseUs: {
-    title: "Why Choose Our MS Chimney",
-    points: [
-      {
-        title: "Structural Integrity",
-        text: "Designed to withstand high wind loads and thermal stress. Internal stiffener rings are provided for larger diameters.",
-      },
-      {
-        title: "Compliance Ready",
-        text: "Designed as per industry standards to help clients get NOC from the Pollution Control Board.",
-      },
-      {
-        title: "End-to-End Solution",
-        text: "We provide complete fabrication, supply, and on-site erection services with proper alignment and stability testing.",
-      },
-      {
-        title: "Custom Built",
-        text: "Each chimney is designed based on your factory’s boiler capacity, fuel type, and site conditions.",
-      },
-    ],
-  },
-
-  applications: {
-    title: "Applications",
-    text: "Essential for venting exhaust from thermic fluid heaters, boilers, and hot presses used in plywood, particle board, and MDF manufacturing plants.",
-  },
-
-  cta: {
-    label: "Yes, Send me a Quote!",
-    href: "#contact",
+    href: "#quote",
   },
 };
 
@@ -320,8 +280,9 @@ export const msShutteringPlateData: ProductPageData = {
   description:
     "We manufacture and supply high-quality Mild Steel (MS) Shuttering Plates designed for use in construction and industrial applications. These plates are essential for creating strong and precise concrete structures, widely used in building construction, infrastructure projects, and industrial flooring.",
 
-  heroImage: "/images/ms-shuttering-plate-1.png",
-  secondaryImage: "/images/ms-shuttering-plate-2.png", 
+  heroImage: product4Img1,
+  secondaryImage: product4Img2,
+  tertiaryImage: product4Img3,
 
   keyFunction: {
     title: "Key Function",
@@ -397,7 +358,85 @@ export const msShutteringPlateData: ProductPageData = {
     text: "MS Shuttering Plates are widely used in construction for casting concrete slabs, beams, columns, walls, and foundations. They are essential in residential buildings, commercial complexes, industrial structures, bridges, and infrastructure projects where precise and durable formwork is required.",
   },
 
-  cta: {
+  cta1: {
     label: "Yes, Send me a Quote!",
+    href: "#quote",
+  },
+  cta2: {
+    label: "Yes, Send me a Quote!",
+    href: "#quote",
+  },
+};
+
+export const chimneyData: ProductPageData = {
+  heading: "MS Chimney / Exhaust Stack for Plywood Factory",
+  description:
+    "We manufacture and supply high-quality Mild Steel (MS) Chimneys / Exhaust Stacks specifically designed for plywood, veneer, and blockboard manufacturing units. The chimney is a critical component for venting out flue gases from the thermic fluid heater or boiler used in the plywood pressing process.",
+
+  heroImage: product5Img1,
+  secondaryImage: product5Img2,
+  tertiaryImage: product5Img3,
+
+  keyFunction: {
+    title: "Key Function",
+    text: "The chimney provides a safe and efficient outlet for hot flue gases, smoke, and particulate matter generated during the heating process. It creates the necessary draft for proper combustion and ensures compliance with pollution control norms by releasing exhaust at a safe height.",
+  },
+
+  construction: {
+    title: "Construction & Features",
+    points: [
+      {
+        title: "Material of Construction",
+        text: "Fabricated from premium quality Mild Steel (MS) plates of IS 2062 grade. Plate thickness ranges from 6mm to 12mm based on height and diameter to ensure structural stability and long service life.",
+      },
+      {
+        title: "Structure",
+        text: "Modular design. The chimney is fabricated in multiple cylindrical sections as seen in the image, which are then welded or flanged together at the site for easy transportation and erection.",
+      },
+      {
+        title: "Dimensions",
+        text: "Customizable to client requirements. Standard heights range from 30 feet to 100 feet with diameters from 450mm to 1200mm, calculated based on boiler capacity and CPCB guidelines.",
+      },
+      {
+        title: "Key Components",
+        text: "Includes a conical top for rain protection, inspection door at the base, drain point, and a sturdy base plate with foundation bolts for secure grouting.",
+      },
+      {
+        title: "Surface Finish",
+        text: "External surface is treated with a coat of red oxide primer followed by heat-resistant aluminum paint to protect against corrosion and high temperatures.",
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our MS Chimney",
+    points: [
+      {
+        title: "Structural Integrity",
+        text: "Designed to withstand high wind loads and thermal stress. Internal stiffener rings are provided for larger diameters.",
+      },
+      {
+        title: "Compliance Ready",
+        text: "Designed as per industry standards to help clients get NOC from the Pollution Control Board.",
+      },
+      {
+        title: "End-to-End Solution",
+        text: "We provide complete fabrication, supply, and on-site erection services with proper alignment and stability testing.",
+      },
+      {
+        title: "Custom Built",
+        text: "Each chimney is designed based on your factory’s boiler capacity, fuel type, and site conditions.",
+      },
+    ],
+  },
+
+  applications: {
+    title: "Applications",
+    text: "Essential for venting exhaust from thermic fluid heaters, boilers, and hot presses used in plywood, particle board, and MDF manufacturing plants.",
+  },
+
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    href: "#contact",
   },
 };
