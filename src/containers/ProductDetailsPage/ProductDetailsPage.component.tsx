@@ -1,8 +1,8 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+
 import { Button, PageHero, Typography } from "@components";
 import type { BulletItem, ProductPageData } from "./ProductDetailsPage.types";
 import { useScreenSize } from "@utils/useScreenSize";
-import { useParams } from "react-router-dom";
 import {
   chimneyData,
   glueKettleData,
