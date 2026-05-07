@@ -39,24 +39,22 @@ const BulletList = ({ items }: { items: BulletItem[] }) => {
     <div className="space-y-4">
       {items.map((item, index) => (
         <div key={index} className="flex">
-          <div>
-            {item.title ? (
-              <div className="flex gap-2">
-                <p className="text-sm md:text-base">
-                  <span className="text-sm md:text-base font-bold">
-                    {item.title}
-                    {": "}
-                  </span>
-                  {item.text}
-                </p>
-              </div>
-            ) : (
-              <Typography
-                variant={isMobile ? "body" : "subtitle"}
-                text={item.text}
-              />
-            )}
-          </div>
+          {item.title ? (
+            <div className="flex gap-2">
+              <p className="text-sm md:text-base">
+                <span className="text-sm md:text-base font-bold">
+                  {item.title}
+                  {": "}
+                </span>
+                {item.text}
+              </p>
+            </div>
+          ) : (
+            <Typography
+              variant={isMobile ? "body" : "subtitle"}
+              text={item.text}
+            />
+          )}
         </div>
       ))}
     </div>

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 
-import { Icon } from "@components";
-import { ScrollToTop } from "@components";
+import { ScrollToTop, Icon } from "@components";
 import { Footer, Navbar, Topbar } from "@containers";
 import { SOCIAL_ICON_LINKS } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
