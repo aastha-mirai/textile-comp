@@ -18,7 +18,7 @@ const HomePage = () => {
         titleVariant="h1"
         title="High-Quality MS Fabrication & Industrial Equipment Solutions"
       />
-      <AboutUs />
+      <AboutUs isHomeVariant />
       <Feature />
       <Product isHomeVariant />
       <WhyChooseUs />

@@ -1,11 +1,12 @@
 import type { ProductCardProps } from "@components";
-import img1 from "@assets/imgs/product-1-resin-kettle.webp";
-import img2 from "@assets/imgs/product-2-storage-tank.webp";
-import img3 from "@assets/imgs/product-3-shutter-plate.webp";
-import img4 from "@assets/imgs/product-4-chimney.webp";
-import img5 from "@assets/imgs/product-5-hopper.webp";
-import img6 from "@assets/imgs/product-6-height-gauge.webp";
-import img7 from "@assets/imgs/product-7-fabrication.webp";
+import img1 from "@assets/imgs/product-resin-kettle.webp";
+import img2 from "@assets/imgs/product-storage-tank.webp";
+import img3 from "@assets/imgs/product-shutter-plate.webp";
+import img4 from "@assets/imgs/product-chimney.webp";
+import img5 from "@assets/imgs/product-hopper.webp";
+import img6 from "@assets/imgs/product-height-gauge.webp";
+import img7 from "@assets/imgs/product-fabrication.webp";
+import img8 from "@assets/imgs/product-linear.webp";
 
 export const productCardData: ProductCardProps[] = [
   {
@@ -34,26 +35,27 @@ export const productCardData: ProductCardProps[] = [
   },
   {
     id: 5,
-    title: "Linear",
+    title: "Hopper",
     image: img5,
     onClick: () => {},
   },
   {
     id: 6,
-    title: "Hopper",
-    image: img6,
+    title: "Linear",
+    image: img8,
     onClick: () => {},
   },
+
   {
     id: 7,
     title: "Height Gauge",
-    image: img7,
+    image: img6,
     onClick: () => {},
   },
   {
     id: 8,
     title: "FABRICATION as per design",
-    image: img4,
+    image: img7,
     onClick: () => {},
   },
 ];

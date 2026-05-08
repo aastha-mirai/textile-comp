@@ -4,8 +4,9 @@ import mainImage from "@assets/imgs/hero-section-a-man-working-in-a-factory.webp
 import { Button, Icon, Typography } from "@components";
 import { useScreenSize } from "@utils/useScreenSize";
 import { ROUTES } from "@utils/constants";
+import type { AboutProps } from "./About.types";
 
-const AboutUs = () => {
+const AboutUs: React.FC<AboutProps> = ({ isHomeVariant = false }) => {
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
   return (
@@ -51,16 +52,18 @@ const AboutUs = () => {
               }
               color="lightGray"
             />
-            <div className="w-auto">
-              <Button
-                text="Learn More"
-                iconName="arrowRight"
-                size="sm"
-                bgColor="primary"
-                isShadow
-                onClick={() => navigate(ROUTES.ABOUT)}
-              />
-            </div>
+            {isHomeVariant && (
+              <div className="w-auto">
+                <Button
+                  text="Learn More"
+                  iconName="arrowRight"
+                  size="sm"
+                  bgColor="primary"
+                  isShadow
+                  onClick={() => navigate(ROUTES.ABOUT)}
+                />
+              </div>
+            )}
           </div>
           {/* img-section */}
           <div className="flex justify-center max-h-96 mx-4 lg:m-auto order-1 lg:order-2">

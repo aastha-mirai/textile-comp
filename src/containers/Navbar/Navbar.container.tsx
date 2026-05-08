@@ -1,15 +1,9 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import logoWithTextDark from "@assets/svgs/logo-with-text-dark.svg";
 import logoWithText from "@assets/svgs/logo-with-text.svg";
-import {
-  Button,
-  ContactInfo,
-  Icon,
-  SocialIconPanel,
-  Typography,
-} from "@components";
+import { ContactInfo, Icon, SocialIconPanel, Typography } from "@components";
 import { ROUTES } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
 
@@ -24,7 +18,6 @@ const links = [
 const Navbar = () => {
   const { isMobile } = useScreenSize();
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
 
   return (
@@ -77,13 +70,6 @@ const Navbar = () => {
             );
           })}
         </nav>
-        <div className="hidden md:flex">
-          <Button
-            size="md"
-            iconName="search"
-            onClick={() => navigate(ROUTES.CONTACT)}
-          />
-        </div>
       </div>
 
       {/* Mobile menu overlay */}

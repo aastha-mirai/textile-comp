@@ -44,8 +44,8 @@ function Layout() {
         <div
           className={`z-level-9 transition-all duration-300 ${
             isFooterVisible
-              ? "absolute right-6 bottom-34"
-              : "fixed right-6 bottom-6"
+              ? "absolute right-6 bottom-70"
+              : "fixed right-6 bottom-2"
           }`}
         >
           <Icon
