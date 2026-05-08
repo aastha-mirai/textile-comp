@@ -7,6 +7,8 @@ import { useScreenSize } from "@utils/useScreenSize";
 import type { ProductProps } from "./Product.types";
 
 const Product: React.FC<ProductProps> = ({ isHomeVariant = false }) => {
+  const { productId } = useParams();
+  const currentProductId = Number(productId);
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
 
@@ -19,8 +21,8 @@ const Product: React.FC<ProductProps> = ({ isHomeVariant = false }) => {
   };
 
   const productsToShow = isHomeVariant
-    ? productCardData.slice(0, 4)
-    : productCardData;
+    ? filteredProducts.slice(0, 4)
+    : filteredProducts;
 
   return (
     <section
