@@ -11,7 +11,7 @@ const ProjectGallery = () => {
 
   return (
     <section
-      aria-label="Our Products Section"
+      aria-label="Work Gallery Section"
       className="flex flex-col items-center w-full mt-12 mb-10 md:my-16"
     >
       <div className="flex flex-col justify-center items-center gap-5 w-full md:w-3xl text-center">

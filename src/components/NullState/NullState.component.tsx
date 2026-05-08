@@ -5,7 +5,7 @@ import { useScreenSize } from "@utils/useScreenSize";
 const NullState = () => {
   const { isMobile } = useScreenSize();
   return (
-    <section>
+    <section aria-label="Null state Section">
       <div className="flex flex-col gap-2 justify-center items-center">
         <img src={nullState} alt="Null state" />
         <Typography
