@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { Button, PageHero, Typography } from "@components";
+import { Button, NullState, PageHero, Typography } from "@components";
 import type { BulletItem, ProductPageData } from "./ProductDetailsPage.types";
 import { useScreenSize } from "@utils/useScreenSize";
 import {
@@ -68,7 +68,7 @@ const ProductDetailsPage = () => {
   const product = productDataMap[productId!];
 
   if (!product) {
-    return <div>Product not found</div>;
+    return <NullState />;
   }
   const hasTertiaryImage = Boolean(product.tertiaryImage);
 
