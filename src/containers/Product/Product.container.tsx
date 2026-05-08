@@ -4,10 +4,9 @@ import { Button, Icon, ProductCard, Typography } from "@components";
 import { productCardData } from "@mockData";
 import { ROUTES } from "@utils/constants";
 import { useScreenSize } from "@utils/useScreenSize";
+import type { ProductProps } from "./Product.types";
 
-const Product = () => {
-  const { productId } = useParams();
-  const currentProductId = Number(productId);
+const Product: React.FC<ProductProps> = ({ isHomeVariant = false }) => {
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
 
@@ -18,6 +17,10 @@ const Product = () => {
   const handleProductClick = (id: number) => {
     navigate(ROUTES.PRODUCT.replace(":productId", String(id)));
   };
+
+  const productsToShow = isHomeVariant
+    ? productCardData.slice(0, 4)
+    : productCardData;
 
   return (
     <section
@@ -48,8 +51,8 @@ const Product = () => {
           />
         </div>
       </div>
-      <div className="flex overflow-x-auto whitespace-nowrap no-scrollbar md:justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-5 py-3">
-        {filteredProducts.slice(0, 4).map(({ id, ...cardProps }) => (
+      <div className="flex flex-wrap justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-5 py-3">
+        {productsToShow.map(({ id, ...cardProps }) => (
           <div key={id} className="flex-shrink-0">
             <ProductCard
               id={id}
@@ -59,15 +62,17 @@ const Product = () => {
           </div>
         ))}
       </div>
-      <div>
-        <Button
-          text="See All Products"
-          bgColor="secondary"
-          iconName="arrowRight"
-          radius="lg"
-          onClick={() => navigate(ROUTES.SERVICES)}
-        />
-      </div>
+      {isHomeVariant && (
+        <div>
+          <Button
+            text="See All Products"
+            bgColor="secondary"
+            iconName="arrowRight"
+            radius="lg"
+            onClick={() => navigate(ROUTES.SERVICES)}
+          />
+        </div>
+      )}
     </section>
   );
 };
