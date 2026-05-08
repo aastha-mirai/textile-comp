@@ -3,7 +3,6 @@ import { PageHero } from "@components";
 import {
   AboutUs,
   Feature,
-  Footer,
   Product,
   ProjectGallery,
   WhyChooseUs,
@@ -11,7 +10,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full">
       <PageHero
         height="h-[640px]"
         bgImage={heroBg}
@@ -24,7 +23,6 @@ const HomePage = () => {
       <Product />
       <WhyChooseUs />
       <ProjectGallery />
-      <Footer />
     </div>
   );
 };

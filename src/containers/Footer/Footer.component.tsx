@@ -26,7 +26,7 @@ const handleAction = (addressInfo: AddressInfoProps) => {
 const Footer: React.FC = () => {
   const { isMobile } = useScreenSize();
   return (
-    <footer id="footer" className="relative bg-secondary mt-18 pt-4">
+    <footer id="footer" className="relative bg-secondary mt-18 pt-4" aria-label="Footer Section">
       <div
         className="absolute right-6 -top-8 lg:-top-16"
         aria-label="Contact us at Whatsapp"
