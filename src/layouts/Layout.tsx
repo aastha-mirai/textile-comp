@@ -29,7 +29,11 @@ function Layout() {
       ([entry]) => {
         setIsFooterVisible(entry.isIntersecting);
       },
-      { threshold: 0 },
+      {
+        root: null,
+        rootMargin: "0px 0px 150px 0px",
+        threshold: 0,
+      },
     );
 
     observer.observe(footer);
@@ -42,11 +46,7 @@ function Layout() {
       {/* redirect to whatsapp channel */}
       {show && (
         <div
-          className={`z-level-9 transition-all duration-300 ${
-            isFooterVisible
-              ? "absolute right-6 bottom-34"
-              : "fixed right-6 bottom-6"
-          }`}
+          className={`fixed right-6 z-level-9 transition-all duration-300 ${isFooterVisible ? "bottom-35 opacity-0 pointer-events-none" : "bottom-2 opacity-100"}`}
         >
           <Icon
             size={isMobile ? 68 : 128}
