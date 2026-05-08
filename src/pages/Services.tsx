@@ -13,7 +13,6 @@ const Services = () => {
       <PageHero
         height="h-96"
         bgImage={serviceBg}
-        titleWidth="3/4"
         title="Quality Fabrication You Can Trust"
       />
       <Feature />

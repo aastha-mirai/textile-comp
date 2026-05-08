@@ -20,7 +20,7 @@ const HomePage = () => {
       />
       <AboutUs />
       <Feature />
-      <Product />
+      <Product isHomeVariant />
       <WhyChooseUs />
       <ProjectGallery />
     </div>

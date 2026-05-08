@@ -13,7 +13,6 @@ const About = () => {
       <PageHero
         height="h-96"
         bgImage={aboutBg}
-        titleWidth="3/4"
         title="Quality Products We Offer"
       />
       <Feature />

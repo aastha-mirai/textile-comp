@@ -8,7 +8,6 @@ const Contact = () => {
       <PageHero
         height="h-96"
         bgImage={aboutBg}
-        titleWidth="3/4"
         title="Request a Quote"
       />
       <Feature />
