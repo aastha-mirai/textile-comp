@@ -6,6 +6,7 @@ const ScrollToTop: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // add pathname to the dependency array so that it runs on route change
     console.log(pathname);
   }, [pathname]);
 

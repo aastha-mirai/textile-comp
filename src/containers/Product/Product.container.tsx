@@ -16,7 +16,7 @@ const Product = () => {
   );
 
   const handleProductClick = (id: number) => {
-    navigate(`/${ROUTES.PRODUCT}/${id}`);
+    navigate(ROUTES.PRODUCT.replace(":productId", String(id)));
   };
 
   return (
