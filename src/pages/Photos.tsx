@@ -6,12 +6,7 @@ import { galleryImages } from "@utils/galleryImages";
 const Photos = () => {
   return (
     <>
-      <PageHero
-        height="h-96"
-        bgImage={aboutBg}
-        titleWidth="3/4"
-        title="Explore Our Gallery"
-      />
+      <PageHero height="h-96" bgImage={aboutBg} title="Explore Our Gallery" />
       <Feature />
       <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 p-4 md:p-10 lg:p-15">
         {galleryImages.map((img, index) => (
