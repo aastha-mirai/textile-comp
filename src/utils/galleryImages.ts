@@ -19,6 +19,13 @@ import pic18 from "@assets/imgs/gallery/photo-18.webp";
 import pic19 from "@assets/imgs/gallery/photo-19.webp";
 import pic20 from "@assets/imgs/gallery/photo-20.webp";
 import pic21 from "@assets/imgs/gallery/photo-21.webp";
+import pic22 from "@assets/imgs/gallery/photo-22.webp";
+import pic23 from "@assets/imgs/gallery/photo-23.webp";
+import pic24 from "@assets/imgs/gallery/photo-24.webp";
+import pic25 from "@assets/imgs/gallery/photo-25.webp";
+import pic26 from "@assets/imgs/gallery/photo-26.webp";
+import pic27 from "@assets/imgs/gallery/photo-27.webp";
+import pic28 from "@assets/imgs/gallery/photo-28.webp";
 
 export const galleryImages = [
   pic1,
@@ -42,4 +49,11 @@ export const galleryImages = [
   pic19,
   pic20,
   pic21,
+  pic22,
+  pic23,
+  pic24,
+  pic25,
+  pic26,
+  pic27,
+  pic28,
 ];

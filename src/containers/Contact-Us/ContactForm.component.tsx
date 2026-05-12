@@ -108,29 +108,23 @@ export const ContactForm: React.FC = () => {
                 </label>
 
                 {field.fieldType === "input" ? (
-                  <div className="relative mt-2">
-                    <input
-                      id={field.label}
-                      name={field.name}
-                      type={field.type}
-                      value={formValues[field.label]}
-                      onChange={handleChange}
-                      className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
-                    />
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-[2px] bg-lightGray"></span>
-                  </div>
+                  <input
+                    id={field.label}
+                    name={field.name}
+                    type={field.type}
+                    value={formValues[field.label]}
+                    onChange={handleChange}
+                    className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
+                  />
                 ) : (
-                  <div className="relative mt-2">
-                    <textarea
-                      id={field.label}
-                      name={field.name}
-                      rows={1}
-                      value={formValues[field.label]}
-                      onChange={handleChange}
-                      className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
-                    />
-                    <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-[2px] bg-lightGray"></span>
-                  </div>
+                  <textarea
+                    id={field.label}
+                    name={field.name}
+                    rows={1}
+                    value={formValues[field.label]}
+                    onChange={handleChange}
+                    className={`w-full border-b mt-2 px-2 py-1 focus:outline-none ${error ? "border-red-500" : "border-offWhite"}`}
+                  />
                 )}
 
                 {error && (

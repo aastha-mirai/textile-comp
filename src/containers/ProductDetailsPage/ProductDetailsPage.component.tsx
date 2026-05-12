@@ -4,8 +4,12 @@ import { Button, NullState, PageHero, Typography } from "@components";
 import type { BulletItem, ProductPageData } from "./ProductDetailsPage.types";
 import { useScreenSize } from "@utils/useScreenSize";
 import {
+  bentoniteTankData,
   chimneyData,
+  fabricationAsPerDesignData,
   glueKettleData,
+  heightGaugeData,
+  linearCasingPipeData,
   msHopperData,
   msShutteringPlateData,
   storageTankData,
@@ -19,6 +23,10 @@ const productDataMap: Record<string, ProductPageData> = {
   "3": msShutteringPlateData,
   "4": chimneyData,
   "5": msHopperData,
+  "6": linearCasingPipeData,
+  "7": heightGaugeData,
+  "8": fabricationAsPerDesignData,
+  "9": bentoniteTankData,
 };
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => {
@@ -126,7 +134,10 @@ const ProductDetailsPage = () => {
                 </div>
 
                 {product.cta1?.label ? (
-                  <Button text={product.cta1.label} />
+                  <Button
+                    text={product.cta1.label}
+                    onClick={product.cta1.onClick}
+                  />
                 ) : null}
               </div>
             </div>
