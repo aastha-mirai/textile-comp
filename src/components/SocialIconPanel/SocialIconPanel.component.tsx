@@ -6,7 +6,7 @@ import { generateUUID } from "@utils/generateUUID";
 const social_icon_links: SocialLink[] = [
   { to: SOCIAL_ICON_LINKS.FACEBOOK, icon: "facebook" },
   { to: SOCIAL_ICON_LINKS.LINKEDIN, icon: "linkedin" },
-  { to: SOCIAL_ICON_LINKS.INSTAGRAM, icon: "twitter" },
+  { to: SOCIAL_ICON_LINKS.INSTAGRAM, icon: "instagram" },
   { to: SOCIAL_ICON_LINKS.YOUTUBE, icon: "youtube" },
 ];
 
