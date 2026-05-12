@@ -17,6 +17,23 @@ import product5Img1 from "@assets/imgs/products-images/product-5-image1.webp";
 import product5Img2 from "@assets/imgs/products-images/product-5-image2.webp";
 import product5Img3 from "@assets/imgs/products-images/product-5-image3.webp";
 
+import product6Img1 from "@assets/imgs/products-images/product-6-image1.webp";
+import product6Img2 from "@assets/imgs/products-images/product-6-image2.webp";
+import product6Img3 from "@assets/imgs/products-images/product-6-image3.webp";
+
+import product7Img1 from "@assets/imgs/products-images/product-7-image1.webp";
+import product7Img2 from "@assets/imgs/products-images/product-7-image2.webp";
+import product7Img3 from "@assets/imgs/products-images/product-7-image3.webp";
+
+import product8Img1 from "@assets/imgs/products-images/product-8-image1.webp";
+import product8Img2 from "@assets/imgs/products-images/product-8-image2.webp";
+import product8Img3 from "@assets/imgs/products-images/product-8-image3.webp";
+
+import product9Img1 from "@assets/imgs/products-images/product-9-image1.webp";
+import product9Img2 from "@assets/imgs/products-images/product-9-image2.webp";
+import product9Img3 from "@assets/imgs/products-images/product-9-image3.webp";
+import { getWhatsAppProductLink } from "@utils/constants";
+
 export const glueKettleData: ProductPageData = {
   heading: "Glue Kettle / Resin Reactor for Plywood Industry",
   description:
@@ -84,7 +101,12 @@ export const glueKettleData: ProductPageData = {
   },
   cta1: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("Glue Kettle / Resin Reactor"),
+        "_blank",
+      );
+    },
   },
 };
 
@@ -172,15 +194,27 @@ export const storageTankData: ProductPageData = {
   },
   cta1: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("Storage Tank / Mild Steel Storage Tank"),
+        "_blank",
+      );
+    },
   },
   cta2: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("5000 L Chemical Storage Tank"),
+        "_blank",
+      );
+    },
   },
   cta3: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("50000 L Oil Storage Tank"), "_blank");
+    },
   },
 };
 
@@ -270,7 +304,9 @@ export const msHopperData: ProductPageData = {
 
   cta1: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("MS Hopper"), "_blank");
+    },
   },
 };
 
@@ -360,11 +396,18 @@ export const msShutteringPlateData: ProductPageData = {
 
   cta1: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("MS Shuttering Plates"), "_blank");
+    },
   },
   cta2: {
     label: "Yes, Send me a Quote!",
-    href: "#quote",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("4 mm Mild Steel Shuttering Plate"),
+        "_blank",
+      );
+    },
   },
 };
 
@@ -425,7 +468,7 @@ export const chimneyData: ProductPageData = {
       },
       {
         title: "Custom Built",
-        text: "Each chimney is designed based on your factory’s boiler capacity, fuel type, and site conditions.",
+        text: "Each chimney is designed based on your factory's boiler capacity, fuel type, and site conditions.",
       },
     ],
   },
@@ -437,6 +480,370 @@ export const chimneyData: ProductPageData = {
 
   cta1: {
     label: "Yes, Send me a Quote!",
-    href: "#contact",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("MS Chimney"), "_blank");
+    },
+  },
+};
+
+export const linearCasingPipeData: ProductPageData = {
+  heading: "Linear Casing Pipe/Borewell Pipe",
+  description:
+    "We manufacture and supply high-precision Linear Casing Pipe designed for accurate linear measurement in industrial and engineering applications. These Pipe are widely used in manufacturing units, quality inspection departments, machine shops, and fabrication industries where dimensional accuracy is essential.",
+
+  heroImage: product8Img1,
+  secondaryImage: product8Img2,
+  tertiaryImage: product8Img3,
+
+  keyFunction: {
+    title: "Key Function",
+    text: "Linear Casing Pipe are used to measure straight-line dimensions, displacement, thickness, and alignment with high precision. They help maintain dimensional consistency, improve quality control, and ensure accurate machining and assembly operations.",
+  },
+
+  construction: {
+    title: "Construction & Features",
+    points: [
+      {
+        title: "Material of Construction",
+        text: "Manufactured using hardened steel or stainless steel for durability, wear resistance, and long service life.",
+      },
+      {
+        title: "Measurement Accuracy",
+        text: "Designed for precise linear measurement with fine graduations and minimal measurement error.",
+      },
+      {
+        title: "Structure",
+        text: "Compact and rigid body construction ensures stable and vibration-free operation.",
+      },
+      {
+        title: "Display System",
+        text: "Available with analog, dial, or digital display options for easy and accurate readings.",
+      },
+      {
+        title: "Smooth Operation",
+        text: "Precision-machined sliding and measuring components ensure effortless movement and reliable measurement.",
+      },
+      {
+        title: "Surface Finish",
+        text: "Corrosion-resistant coating or polished finish for enhanced durability.",
+      },
+      {
+        title: "Customization",
+        text: "Available in different sizes and measurement ranges based on application requirements.",
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Linear Casing Pipe",
+    points: [
+      {
+        title: "High Precision Measurement",
+        text: "Ensures accurate and repeatable results.",
+      },
+      {
+        title: "Robust Construction",
+        text: "Suitable for industrial working conditions.",
+      },
+      {
+        title: "Easy to Operate",
+        text: "User-friendly design with clear readability.",
+      },
+      {
+        title: "Reliable Performance",
+        text: "Maintains accuracy over long-term usage.",
+      },
+      {
+        title: "Versatile Applications",
+        text: "Suitable for multiple industrial measurement tasks.",
+      },
+    ],
+  },
+
+  applications: {
+    title: "Applications",
+    text: "Widely used in machining, fabrication, automotive industries, tool rooms, quality inspection labs, and manufacturing plants for dimensional checking and precision measurement tasks.",
+  },
+
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("Linear Casing Pipe"), "_blank");
+    },
+  },
+};
+
+export const heightGaugeData: ProductPageData = {
+  heading: "Height Gauge",
+  description:
+    "We manufacture and supply high-quality Height Gauges / Road Height Barriers designed for vehicle height restriction and safety control on roads, bridges, underpasses, factory entrances, toll plazas, and restricted entry zones. These structures are fabricated using heavy-duty Mild Steel (MS) sections to ensure durability, visibility, and long service life in outdoor environments.",
+
+  heroImage: product7Img1,
+  secondaryImage: product7Img2,
+  tertiaryImage: product7Img3,
+
+  keyFunction: {
+    title: "Key Function",
+    text: "Height Gauges are used to restrict the entry of over-height vehicles into specific areas where height clearance is limited. They help prevent accidents, protect bridges and overhead structures, and ensure smooth traffic management by providing a visible warning before restricted zones.",
+  },
+
+  construction: {
+    title: "Construction & Features",
+    points: [
+      {
+        title: "Material of Construction",
+        text: "Fabricated using premium quality Mild Steel (MS) beams, channels, and plates for high structural strength and durability.",
+      },
+      {
+        title: "Structure",
+        text: "Heavy-duty rectangular frame structure with vertical support columns and horizontal cross beam for height restriction indication.",
+      },
+      {
+        title: "Design",
+        text: "Available in fixed or customized designs based on required road clearance and site conditions.",
+      },
+      {
+        title: "Height Marking",
+        text: "Clearly painted in high-visibility black and white reflective patterns for easy identification during day and night.",
+      },
+      {
+        title: "Support System",
+        text: "Strong foundation base plates and reinforced support members ensure stability against wind load and vehicle impact.",
+      },
+      {
+        title: "Surface Finish",
+        text: "Coated with red oxide primer and weather-resistant industrial paint for corrosion protection and outdoor durability.",
+      },
+      {
+        title: "Customization",
+        text: "Height, width, beam size, and structural design can be customized according to road standards and client requirements.",
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Height Gauge",
+    points: [
+      {
+        title: "Robust Construction",
+        text: "Designed for continuous outdoor usage and harsh environmental conditions.",
+      },
+      {
+        title: "High Visibility",
+        text: "Reflective color patterns improve safety and visibility for drivers.",
+      },
+      {
+        title: "Accurate Height Restriction",
+        text: "Prevents entry of oversized vehicles into restricted areas.",
+      },
+      {
+        title: "Low Maintenance",
+        text: "Durable fabrication with corrosion-resistant coating ensures long service life.",
+      },
+      {
+        title: "Custom Fabrication",
+        text: "Manufactured according to site dimensions and project specifications.",
+      },
+    ],
+  },
+
+  applications: {
+    title: "Applications",
+    text: "Widely used on roads, railway crossings, bridges, underpasses, toll plazas, industrial premises, warehouses, parking areas, and restricted entry zones to control vehicle height and enhance traffic safety.",
+  },
+
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    onClick: () => {
+      window.open(getWhatsAppProductLink("Height Gauge"), "_blank");
+    },
+  },
+};
+
+export const fabricationAsPerDesignData: ProductPageData = {
+  heading: "Fabrication as per Design",
+  description:
+    "We provide custom fabrication services as per client design and specifications, delivering high-quality engineered solutions for industrial, commercial, and infrastructure applications. Our fabrication capabilities cover a wide range of components and structures tailored to meet specific project requirements.",
+
+  heroImage: product9Img1,
+  secondaryImage: product9Img2,
+  tertiaryImage: product9Img3,
+
+  keyFunction: {
+    title: "Key Function",
+    text: "Fabrication as per design ensures that every component is manufactured exactly according to client drawings, technical specifications, and functional requirements. It enables precise execution of complex designs while maintaining quality and performance standards.",
+  },
+
+  construction: {
+    title: "Construction & Features",
+    points: [
+      {
+        title: "Material Flexibility",
+        text: "Fabrication in Mild Steel (MS), Stainless Steel (SS), and other metals based on application needs.",
+      },
+      {
+        title: "Precision Engineering",
+        text: "Advanced machinery and skilled workforce ensure accurate cutting, bending, welding, and assembly.",
+      },
+      {
+        title: "Design Compliance",
+        text: "Strict adherence to client drawings, industry standards, and quality norms.",
+      },
+      {
+        title: "Welding & Assembly",
+        text: "High-quality welding techniques ensure structural strength and durability.",
+      },
+      {
+        title: "Surface Treatment",
+        text: "Options such as painting, powder coating, galvanizing, or polishing for corrosion resistance and finish.",
+      },
+      {
+        title: "Quality Control",
+        text: "Thorough inspection at every stage of fabrication to ensure defect-free output.",
+      },
+      {
+        title: "Customization",
+        text: "Fully customizable designs, sizes, and finishes as per project requirements.",
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Fabrication Services",
+    points: [
+      {
+        title: "Tailor-Made Solutions",
+        text: "Designed and built exactly as per client requirements.",
+      },
+      {
+        title: "High Quality Standards",
+        text: "Ensures durability, strength, and performance.",
+      },
+      {
+        title: "Skilled Workforce",
+        text: "Experienced team handling complex fabrication projects.",
+      },
+      {
+        title: "Timely Delivery",
+        text: "Efficient processes to meet project deadlines.",
+      },
+      {
+        title: "End-to-End Support",
+        text: "From design understanding to final delivery and installation.",
+      },
+    ],
+  },
+
+  applications: {
+    title: "Applications",
+    text: "Used across various industries including construction, manufacturing, infrastructure, energy, and industrial plants for structural components, machinery parts, platforms, tanks, frames, and custom-built equipment.",
+  },
+
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("Fabrication as per Design"),
+        "_blank",
+      );
+    },
+  },
+};
+
+export const bentoniteTankData: ProductPageData = {
+  heading: "Bentonite Tank / Square Storage Tank",
+  description:
+    "We manufacture and supply high-quality Bentonite Tanks / Square Storage Tanks designed for efficient storage, mixing, and handling of bentonite slurry, water, chemicals, and other industrial liquids. These tanks are widely used in construction projects, drilling operations, industrial plants, and material handling applications where a strong and space-efficient storage solution is required.",
+
+  heroImage: product6Img1,
+  secondaryImage: product6Img2,
+  tertiaryImage: product6Img3,
+
+  keyFunction: {
+    title: "Key Function",
+    text: "Bentonite Tanks / Square Storage Tanks are used for storing and managing bentonite slurry and industrial liquids in a safe and controlled manner. Their square-shaped structure allows better space utilization while ensuring easy handling, mixing, and discharge of materials during industrial and construction operations.",
+  },
+
+  construction: {
+    title: "Construction & Features",
+    points: [
+      {
+        title: "Material of Construction",
+        text: "Fabricated using premium quality Mild Steel (MS) plates conforming to IS 2062 standards for high strength and durability.",
+      },
+      {
+        title: "Structure",
+        text: "Heavy-duty square-shaped welded tank construction with reinforced supports and stiffeners for enhanced structural stability.",
+      },
+      {
+        title: "Capacity Range",
+        text: "Available in various storage capacities depending on project and operational requirements.",
+      },
+      {
+        title: "Mixing Arrangement",
+        text: "Can be equipped with agitator or mixing systems to maintain uniform slurry consistency where required.",
+      },
+      {
+        title: "Wall Thickness",
+        text: "Manufactured with suitable plate thickness to withstand pressure, load, and continuous industrial usage.",
+      },
+      {
+        title: "Discharge System",
+        text: "Provided with outlet valves, drain points, and piping connections for smooth material flow and easy cleaning.",
+      },
+      {
+        title: "Support Structure",
+        text: "Strong MS support legs and structural frames ensure safe installation and operation.",
+      },
+      {
+        title: "Surface Finish",
+        text: "Coated with anti-corrosion primer and industrial paint for protection against rust and harsh working environments.",
+      },
+      {
+        title: "Customization",
+        text: "Tank dimensions, thickness, outlet design, and accessories can be customized as per client specifications.",
+      },
+    ],
+  },
+
+  whyChooseUs: {
+    title: "Why Choose Our Bentonite Tank / Square Storage Tank",
+    points: [
+      {
+        title: "Robust Construction",
+        text: "Designed for heavy-duty industrial and construction applications.",
+      },
+      {
+        title: "Space Efficient Design",
+        text: "Square structure allows maximum utilization of available space.",
+      },
+      {
+        title: "Leak-Proof Performance",
+        text: "Precision fabrication and welding ensure safe and reliable storage.",
+      },
+      {
+        title: "Low Maintenance",
+        text: "Durable design with corrosion-resistant finish ensures long service life.",
+      },
+      {
+        title: "Custom Fabrication",
+        text: "Manufactured according to site conditions and project requirements.",
+      },
+    ],
+  },
+
+  applications: {
+    title: "Applications",
+    text: "Widely used in piling works, drilling operations, tunneling projects, construction sites, industrial plants, slurry handling systems, water storage applications, and chemical processing industries.",
+  },
+
+  cta1: {
+    label: "Yes, Send me a Quote!",
+    onClick: () => {
+      window.open(
+        getWhatsAppProductLink("Bentonite Tank / Square Storage Tank"),
+        "_blank",
+      );
+    },
   },
 };

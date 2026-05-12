@@ -28,15 +28,15 @@ export type ProductPageData = {
   };
   cta1?: {
     label: string;
-    href?: string;
+    onClick?: () => void;
   };
   cta2?: {
     label: string;
-    href?: string;
+    onClick?: () => void;
   };
   cta3?: {
     label: string;
-    href?: string;
+    onClick?: () => void;
   };
 };
 

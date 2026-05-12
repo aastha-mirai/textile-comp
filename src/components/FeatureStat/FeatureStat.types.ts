@@ -4,7 +4,10 @@ export interface FeatureStatsCardData {
   id: number;
   icon: IconName;
   text: string;
-  textVariant?: TypoVariant;
-  textVariantForMobile?: TypoVariant;
+}
+
+export interface FeatureStatProps extends FeatureStatsCardData {
+  textVariant: TypoVariant;
+  textVariantForMobile: TypoVariant;
   textWeightVariant?: FontWeight;
 }

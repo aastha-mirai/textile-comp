@@ -7,6 +7,7 @@ import img5 from "@assets/imgs/product-hopper.webp";
 import img6 from "@assets/imgs/product-height-gauge.webp";
 import img7 from "@assets/imgs/product-fabrication.webp";
 import img8 from "@assets/imgs/product-linear.webp";
+import img9 from "@assets/imgs/product-bentonite-tank.webp";
 
 export const productCardData: ProductCardProps[] = [
   {
@@ -56,6 +57,12 @@ export const productCardData: ProductCardProps[] = [
     id: 8,
     title: "FABRICATION as per design",
     image: img7,
+    onClick: () => {},
+  },
+  {
+    id: 9,
+    title: "Bentonite Tank / Square Storage Tank",
+    image: img9,
     onClick: () => {},
   },
 ];

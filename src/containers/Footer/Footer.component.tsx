@@ -26,7 +26,11 @@ const handleAction = (addressInfo: AddressInfoProps) => {
 const Footer: React.FC = () => {
   const { isMobile } = useScreenSize();
   return (
-    <footer id="footer" className="relative bg-secondary mt-18 pt-4" aria-label="Footer Section">
+    <footer
+      id="footer"
+      className="relative bg-secondary mt-18 pt-4"
+      aria-label="Footer Section"
+    >
       <div
         className="absolute right-6 -top-8 lg:-top-16"
         aria-label="Contact us at Whatsapp"
@@ -109,11 +113,11 @@ const Footer: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex flex-col w-36 lg:justify-self-end">
+          <div className="flex flex-col w-20 sm:w-36 lg:justify-self-end">
             <img src={msmeLogo} alt="MSME Certification Logo" />
           </div>
 
-          <div className="flex flex-col w-36 lg:justify-self-end">
+          <div className="flex flex-col w-20 sm:w-36 lg:justify-self-end">
             <img src={isoLogo} alt="ISO Certification Logo" />
           </div>
         </div>

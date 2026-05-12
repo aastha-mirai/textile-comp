@@ -1,8 +1,8 @@
 import { Icon, Typography } from "@components";
-import type { FeatureStatsCardData } from "./FeatureStat.types";
+import type { FeatureStatProps } from "./FeatureStat.types";
 import { useScreenSize } from "@utils/useScreenSize";
 
-const FeatureStat: React.FC<FeatureStatsCardData> = (props) => {
+const FeatureStat: React.FC<FeatureStatProps> = (props) => {
   const {
     id,
     icon,
