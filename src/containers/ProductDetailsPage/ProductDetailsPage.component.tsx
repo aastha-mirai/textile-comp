@@ -153,7 +153,10 @@ const ProductDetailsPage = () => {
                   />
                 </div>
                 {product.cta2?.label ? (
-                  <Button text={product.cta2.label} />
+                  <Button
+                    text={product.cta2.label}
+                    onClick={product.cta2.onClick}
+                  />
                 ) : null}
               </div>
 
@@ -188,7 +191,10 @@ const ProductDetailsPage = () => {
                     />
                   </div>
                   {product.cta3?.label ? (
-                    <Button text={product.cta3.label} />
+                    <Button
+                      text={product.cta3.label}
+                      onClick={product.cta3.onClick}
+                    />
                   ) : null}
                 </div>
               )}
