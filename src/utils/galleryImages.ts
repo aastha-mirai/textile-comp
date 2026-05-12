@@ -26,6 +26,7 @@ import pic25 from "@assets/imgs/gallery/photo-25.webp";
 import pic26 from "@assets/imgs/gallery/photo-26.webp";
 import pic27 from "@assets/imgs/gallery/photo-27.webp";
 import pic28 from "@assets/imgs/gallery/photo-28.webp";
+import pic29 from "@assets/imgs/gallery/photo-29.png";
 
 export const galleryImages = [
   pic1,
@@ -56,4 +57,5 @@ export const galleryImages = [
   pic26,
   pic27,
   pic28,
+  pic29,
 ];
