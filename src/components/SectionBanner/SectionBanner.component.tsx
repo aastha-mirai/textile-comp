@@ -1,7 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 import { useScreenSize } from "@utils/useScreenSize";
 import { Typography, Button } from "@components";
 import { ROUTES, SOCIAL_ICON_LINKS } from "@utils/constants";
-import { useNavigate } from "react-router-dom";
 
 const SectionBanner: React.FC = () => {
   const { isMobile } = useScreenSize();
