@@ -35,9 +35,9 @@ import product9Img3 from "@assets/imgs/products-images/product-9-image3.webp";
 import { getWhatsAppProductLink } from "@utils/constants";
 
 export const glueKettleData: ProductPageData = {
-  heading: "Glue Kettle / Resin Reactor for Plywood Industry",
+  heading: "Plywood Glue Kettle Machine / Resin Reactor for Plywood Industry",
   description:
-    "Our heavy-duty Glue Kettle, also known as a Resin Reactor or Glue Cooking Tank, is an essential piece of equipment for plywood and blockboard manufacturing. It is specifically engineered for the preparation of high-quality adhesives used in wood panel production.",
+    "Our heavy-duty Glue Kettle, also known as a Resin Reactor or Glue Cooking Tank, is an essential piece of equipment for any plywood and blockboard manufacturing unit. It is specifically engineered for the preparation of high-quality adhesives used in wood panel production.",
   heroImage: product1Img1,
   secondaryImage: product1Img2,
   keyFunction: {
@@ -46,7 +46,6 @@ export const glueKettleData: ProductPageData = {
   },
   construction: {
     title: "Construction & Features",
-    text: "The primary purpose of this kettle is to cook and mix various chemical compounds to produce the adhesive resin that bonds veneer layers together. It is used for preparing Urea-Formaldehyde (UF), Melamine-Urea-Formaldehyde (MUF), and Phenol-Formaldehyde (PF) resins under controlled temperature and agitation.",
     points: [
       {
         title: "Material of Construction",
@@ -54,19 +53,19 @@ export const glueKettleData: ProductPageData = {
       },
       {
         title: "Structure",
-        text: "A robust, vertical cylindrical vessel with a dished top and bottom for uniform heat distribution and easy cleaning.",
+        text: "A robust, vertical cylindrical vessel with a dished top and bottom for uniformheat distribution and easy cleaning.",
       },
       {
         title: "Heating System",
-        text: "Features a steam-jacketed design. Steam circulates between the inner vessel and outer jacket, providing indirect and uniform heating to the resin mixture, preventing scorching and ensuring consistent quality.",
+        text: "Features a steam-jacketed design. Steam circulates between the innervessel and outer jacket, providing indirect and uniform heating to the resin mixture, preventing charring and ensuring consistent quality. The circular studs visible on the shell are for jacket reinforcement.",
       },
       {
         title: "Agitation System",
-        text: "The top flange is designed to mount a heavy-duty agitator motor with gearbox. A stainless steel anchor-type stirrer ensures thorough mixing of chemicals, maintaining homogeneity and preventing sedimentation.",
+        text: "The top flange is designed to mount a heavy-duty agitator motor with a gearbox. A stainless steel anchor-type stirrer ensures thorough mixing of chemicals, maintaining homogeneity and preventing sedimentation.",
       },
       {
         title: "Ports & Nozzles",
-        text: "Equipped with multiple nozzles for raw material inlet, temperature gauge, pressure gauge, safety valve, steam inlet/outlet, and a bottom discharge valve for draining the prepared glue.",
+        text: "Equipped with multiple nozzles for raw material inlet, temperature gauge, pressure gauge, safety valve, steam inlet/outlet, and a bottom discharge valve for draining the prepared glue. The rectangular opening on the side serves as a manhole or inspection port.",
       },
       {
         title: "Capacity",
@@ -129,35 +128,35 @@ export const storageTankData: ProductPageData = {
     points: [
       {
         title: "Material of Construction",
-        text: "Fabricated using premium quality Mild Steel plates conforming to IS 2062 grade.",
+        text: "Fabricated using premium quality Mild Steel plates conforming to IS 2062 grade, ensuring high strength, durability, and weldability.",
       },
       {
         title: "Tank Shape & Orientation",
-        text: "Available in horizontal and vertical configurations based on space and application.",
+        text: "Cylindrical design available in both horizontal and vertical configurations, depending on site requirements and application.",
       },
       {
         title: "Capacity Range",
-        text: "Standard capacities from 500L to 100,000+ liters. Custom-built options available.",
+        text: "Standard capacity starts from 500 liters to 100,000+ liters. Custom-built tanks available as per client specifications (e.g., 10,000 L as shown).",
       },
       {
         title: "Wall Thickness",
-        text: "Ranges from 4mm to 12mm depending on tank capacity and application.",
+        text: "Typically ranges from 4 mm to 12 mm, depending on tank capacity and application to ensure structural stability and long service life.",
       },
       {
         title: "Structure",
-        text: "Robust welded construction with reinforced supports or saddles.",
+        text: "Robust welded construction with reinforced supports or saddles for horizontal tanks to provide stability during operation.",
       },
       {
         title: "Surface Treatment",
-        text: "Coated with red oxide primer and optional enamel/PU coating for corrosion resistance.",
+        text: "External surface coated with red oxide primer and optional enamel/PU paint for corrosion resistance. Internal lining options like epoxy coating, rubber lining, or food-grade coating available based on usage.",
       },
       {
         title: "Installation Type",
-        text: "Above-ground installation with provisions for easy placement and maintenance.",
+        text: "Designed for above-ground installation, with provisions for easy placement and maintenance.",
       },
       {
         title: "Key Components",
-        text: "Includes inlet/outlet nozzles, manhole, vent pipe, drain valve, and level indicator.",
+        text: "Includes inlet/outlet nozzles, manhole for inspection, vent pipe, drain valve, and level indicator (optional).",
       },
     ],
   },
@@ -175,7 +174,7 @@ export const storageTankData: ProductPageData = {
       },
       {
         title: "Customizable Design",
-        text: "Designed based on capacity, liquid type, and available space.",
+        text: "Tanks are designed based on specific requirements such as capacity, liquid type, and available space.",
       },
       {
         title: "Corrosion Protection",
@@ -183,14 +182,14 @@ export const storageTankData: ProductPageData = {
       },
       {
         title: "Easy Maintenance",
-        text: "User-friendly design with inspection points for cleaning and servicing.",
+        text: "User-friendly design with inspection points for cleaning and maintenance.",
       },
     ],
   },
 
   applications: {
     title: "Applications",
-    text: "MS Storage Tanks are widely used for water storage systems, industrial liquid handling, and chemical storage. They are also suitable for oil and fuel storage, as well as effluent and wastewater treatment plants. With proper lining, they can be used in food and pharmaceutical industries.",
+    text: "MS Storage Tanks are widely used for water storage systems, handling industrial process liquids, and storing chemicals and solvents safely. They are also suitable for oil and fuel storage, as well as in effluent and wastewater treatment plants. With appropriate internal lining, these tanks can be effectively used in food and pharmaceutical industries, ensuring safe and hygienic storage conditions.",
   },
   cta1: {
     label: "Yes, Send me a Quote!",
@@ -222,7 +221,7 @@ export const msHopperData: ProductPageData = {
   heading: "MS Hopper for Industrial Applications",
 
   description:
-    "We manufacture and supply high-quality Mild Steel (MS) hoppers designed for efficient storage, handling, and controlled discharge of bulk materials in industrial environments. These hoppers are widely used in plywood factories, cement plants, chemical industries, and material handling systems.",
+    "We manufacture and supply high-quality Mild Steel (MS) Hoppers designed for efficient storage, handling, and controlled discharge of bulk materials in industrial environments. These hoppers are widely used in plywood factories, cement plants, chemical industries, and material handling systems.",
 
   heroImage: product3Img1,
   secondaryImage: product3Img2,
@@ -276,7 +275,7 @@ export const msHopperData: ProductPageData = {
     points: [
       {
         title: "Efficient Material Flow:",
-        text: "Scientifically designed slope ensures smooth and blockage-free discharge.",
+        text: "Scientifically designed slopes ensure smooth and blockage-free discharge.",
       },
       {
         title: "Robust Construction:",
@@ -334,11 +333,11 @@ export const msShutteringPlateData: ProductPageData = {
       },
       {
         title: "Structure:",
-        text: "The plates feature a flat surface reinforced with MS stiffeners and ribs at the back, providing bending resistance and uniform load distribution.",
+        text: "The plates feature a flat surface reinforced with MS stiffeners and ribs at the back, as visible in the image, to prevent bending and ensure uniform load distribution.",
       },
       {
         title: "Plate Thickness:",
-        text: "Typically ranges from 3 mm to 6 mm for the base plate, with additional support sections for enhanced rigidity.",
+        text: "Typically ranges from 2 mm to 6 mm for the base plate, with additional support sections for enhanced rigidity.",
       },
       {
         title: "Design:",
@@ -358,7 +357,7 @@ export const msShutteringPlateData: ProductPageData = {
       },
       {
         title: "Customization:",
-        text: "Size, thickness, and reinforcement pattern can be customized based on project requirements.",
+        text: "Sizes, thickness, and reinforcement pattern can be customized based on project requirements.",
       },
     ],
   },
@@ -380,7 +379,7 @@ export const msShutteringPlateData: ProductPageData = {
       },
       {
         title: "Easy Handling & Installation:",
-        text: "Modular design allows quick assembly and dismantling on-site.",
+        text: "Modular design allows quick assembly and dismantling at the site.",
       },
       {
         title: "Cost-Effective Solution:",
@@ -412,7 +411,7 @@ export const msShutteringPlateData: ProductPageData = {
 };
 
 export const chimneyData: ProductPageData = {
-  heading: "MS Chimney / Exhaust Stack for Plywood Factory",
+  heading: "Industrial Chimney / Exhaust Stack for Plywood Factory",
   description:
     "We manufacture and supply high-quality Mild Steel (MS) Chimneys / Exhaust Stacks specifically designed for plywood, veneer, and blockboard manufacturing units. The chimney is a critical component for venting out flue gases from the thermic fluid heater or boiler used in the plywood pressing process.",
 
@@ -430,7 +429,7 @@ export const chimneyData: ProductPageData = {
     points: [
       {
         title: "Material of Construction",
-        text: "Fabricated from premium quality Mild Steel (MS) plates of IS 2062 grade. Plate thickness ranges from 6mm to 12mm based on height and diameter to ensure structural stability and long service life.",
+        text: "Fabricated from premium quality Mild Steel (MS) plates of IS 2062 grade. Plate thickness ranges from 5mm to 12mm based on the height and diameter to ensure structural stability and long service life.",
       },
       {
         title: "Structure",
@@ -438,7 +437,7 @@ export const chimneyData: ProductPageData = {
       },
       {
         title: "Dimensions",
-        text: "Customizable to client requirements. Standard heights range from 30 feet to 100 feet with diameters from 450mm to 1200mm, calculated based on boiler capacity and CPCB guidelines.",
+        text: "Customizable to client requirements. Standard heights range from 30 feet to 100 feet with diameters from 450mm to 1200mm, calculated based on the boiler capacity and CPCB guidelines.",
       },
       {
         title: "Key Components",
@@ -489,7 +488,7 @@ export const chimneyData: ProductPageData = {
 export const linearCasingPipeData: ProductPageData = {
   heading: "Linear Casing Pipe/Borewell Pipe",
   description:
-    "We manufacture and supply high-precision Linear Casing Pipe designed for accurate linear measurement in industrial and engineering applications. These Pipe are widely used in manufacturing units, quality inspection departments, machine shops, and fabrication industries where dimensional accuracy is essential.",
+    "We manufacture and supply high-precision Linear Casting Pipe designed for accurate linear measurement in industrial and engineering applications. These Pipe are widely used in manufacturing units, quality inspection departments, machine shops, and fabrication industries where dimensional accuracy is essential.",
 
   heroImage: product8Img1,
   secondaryImage: product8Img2,
@@ -497,7 +496,7 @@ export const linearCasingPipeData: ProductPageData = {
 
   keyFunction: {
     title: "Key Function",
-    text: "Linear Casing Pipe are used to measure straight-line dimensions, displacement, thickness, and alignment with high precision. They help maintain dimensional consistency, improve quality control, and ensure accurate machining and assembly operations.",
+    text: "Linear Casting Pipe are used to measure straight-line dimensions, displacement, thickness, and alignment with high precision. They help maintain dimensional consistency, improve quality control, and ensure accurate machining and assembly operations.",
   },
 
   construction: {
