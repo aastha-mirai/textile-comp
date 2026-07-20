@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 import { Button, Typography } from "@components";
 import { ROUTES, SOCIAL_ICON_LINKS } from "@utils/constants";
@@ -14,21 +13,9 @@ const PageHero = (props: PageHeroProps) => {
     titleWidth = "full",
     titleVariant = "h2",
   } = props;
-  const text = "MS Kettle | Storage Tank | Chimney | Baby Boiler";
-  const parts = text.split("|").map((p) => p.trim());
 
   const { isMobile } = useScreenSize();
   const navigate = useNavigate();
-
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % parts.length);
-    }, 1500);
-
-    return () => clearInterval(id);
-  }, []);
 
   return (
     <section className={`relative w-full ${height} overflow-hidden`}>
@@ -56,20 +43,14 @@ const PageHero = (props: PageHeroProps) => {
           </div>
 
           <div className="flex md:tracking-widest items-center">
-            {parts.map((part, index) => (
-              <div key={index} className="flex items-center">
+              <div  className="flex items-center">
                 <Typography
                   variant={isMobile ? "body" : "headline"}
-                  text={part}
+                  text="MS Kettle | Storage Tank | Chimney | Baby Boiler"
                   weight="bold"
-                  color={index === activeIndex ? "brightBlue" : "white"}
+                  color={"white"}
                 />
-
-                {index !== parts.length - 1 && (
-                  <span className="text-white mx-2">|</span>
-                )}
               </div>
-            ))}
           </div>
 
           <div className="mt-2 md:mt-10 flex sm:flex-row flex-wrap gap-2 sm:gap-4 max-w-sm">

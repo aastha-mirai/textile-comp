@@ -5,10 +5,11 @@ import { useScreenSize } from "@utils/useScreenSize";
 
 const WhyChooseUs = () => {
   const { isMobile } = useScreenSize();
+
   return (
     <section
       aria-label="Why Choose Us Section"
-      className="relative flex items-center justify-center flex-wrap md:pt-11 md:pb-19 pt-8 sm:py-8 px-2"
+      className="relative flex items-center justify-center flex-wrap md:pt-11 md:pb-19 pt-8 sm:py-8 px-2 mt-12"
     >
       <img
         src={bgImage}
@@ -38,7 +39,7 @@ const WhyChooseUs = () => {
 
               {/* Divider except last item */}
               {index !== whyChooseUsStat.length - 1 && (
-                <div className="xl:w-[2px] xl:h-12 xl:bg-white xl:mx-12" />
+                <div className="xl:w-0.5 xl:h-12 xl:bg-white xl:mx-12" />
               )}
             </div>
           ))}

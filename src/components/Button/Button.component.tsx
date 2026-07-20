@@ -81,7 +81,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   const iconSize = isIconOnly ? (size === "md" ? 24 : 20) : 24;
 
   return (
-    <>
+    
       <button
         type="button"
         className={buttonClasses}
@@ -109,7 +109,7 @@ const Button: React.FC<ButtonProps> = (props) => {
           )}
         </>
       </button>
-    </>
+  
   );
 };
 

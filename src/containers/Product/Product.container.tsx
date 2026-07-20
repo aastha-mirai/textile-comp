@@ -55,7 +55,7 @@ const Product: React.FC<ProductProps> = ({ isHomeVariant = false }) => {
       </div>
       <div className="flex flex-wrap justify-center items-center w-full mt-10 mb-2 md:my-5 mx-auto gap-6 px-5 py-3">
         {productsToShow.map(({ id, ...cardProps }) => (
-          <div key={id} className="flex-shrink-0">
+          <div key={id} className="shrink-0">
             <ProductCard
               id={id}
               {...cardProps}

@@ -17,7 +17,7 @@ const Feature = () => {
 
           {/* Divider except last item */}
           {index !== featureStatsCard.length - 1 && (
-            <div className="xl:w-[2px] xl:h-12 xl:bg-white xl:mx-12" />
+            <div className="xl:w-0.5 xl:h-12 xl:bg-white xl:mx-12" />
           )}
         </div>
       ))}

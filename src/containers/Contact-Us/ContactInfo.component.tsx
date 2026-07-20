@@ -7,7 +7,7 @@ export const ContactInfo: React.FC = () => {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className="relative rounded-2xl p-4 md:pt-10 md:pl-10 md:pr-14 md:pb-14 text-white flex flex-col justify-between gap-16 rounded-xl overflow-hidden">
+    <div className="relative rounded-2xl p-4 md:pt-10 md:pl-10 md:pr-14 md:pb-14 text-white flex flex-col justify-between gap-16 overflow-hidden">
       <img
         src={bgImage}
         className="z-n-level-2 overflow-hidden absolute inset-0 w-full h-full object-cover"
@@ -22,11 +22,9 @@ export const ContactInfo: React.FC = () => {
       </div>
       <div className="flex flex-col flex-wrap gap-10">
         {contactInfo.map((info) => (
-          <div key={info.id} className="flex items-center gap-6">
-            <div className="">
+          <div key={info.id} className="flex gap-6 md:space-y-4">
               <Icon icon={info.icon} size={24} color="white" />
-            </div>
-            <div className="flex flex-wrap items-center lg:justify-center gap-2">
+            <div className="flex flex-row lg:justify-center gap-2">
               <Typography
                 variant={isMobile ? "subtitle" : "body"}
                 text={`${info.title}:`}

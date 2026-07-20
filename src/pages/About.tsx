@@ -4,7 +4,6 @@ import {
   AboutUs,
   CapabilitiesSection,
   Feature,
-  ProjectGallery,
 } from "@containers";
 
 const About = () => {
@@ -19,7 +18,6 @@ const About = () => {
       <AboutUs />
       <CapabilitiesSection />
       <SectionBanner />
-      <ProjectGallery />
     </div>
   );
 };

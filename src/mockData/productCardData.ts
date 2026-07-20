@@ -18,19 +18,19 @@ export const productCardData: ProductCardProps[] = [
   },
   {
     id: 2,
-    title: "Chemical Storage Tank",
+    title: "Simple Storage Tank",
     image: img2,
     onClick: () => {},
   },
   {
     id: 3,
-    title: "MS Shuttering Plate",
+    title: "Shuttering Plate",
     image: img3,
     onClick: () => {},
   },
   {
     id: 4,
-    title: "MS CHIMNEY FABRICATION",
+    title: "CHIMNEY FABRICATION",
     image: img4,
     onClick: () => {},
   },
@@ -55,14 +55,14 @@ export const productCardData: ProductCardProps[] = [
   },
   {
     id: 8,
-    title: "FABRICATION as per design",
-    image: img7,
+    title: "Square Storage Tank",
+    image: img9,
     onClick: () => {},
   },
   {
     id: 9,
-    title: "Bentonite Tank / Square Storage Tank",
-    image: img9,
+    title: "FABRICATION as per design",
+    image: img7,
     onClick: () => {},
   },
 ];

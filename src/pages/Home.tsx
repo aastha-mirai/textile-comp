@@ -3,8 +3,6 @@ import { PageHero } from "@components";
 import {
   AboutUs,
   Feature,
-  Product,
-  ProjectGallery,
   WhyChooseUs,
 } from "@containers";
 
@@ -20,9 +18,7 @@ const HomePage = () => {
       />
       <AboutUs isHomeVariant />
       <Feature />
-      <Product isHomeVariant />
       <WhyChooseUs />
-      <ProjectGallery />
     </div>
   );
 };

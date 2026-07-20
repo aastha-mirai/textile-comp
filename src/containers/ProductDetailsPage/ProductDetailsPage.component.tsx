@@ -25,8 +25,9 @@ const productDataMap: Record<string, ProductPageData> = {
   "5": msHopperData,
   "6": linearCasingPipeData,
   "7": heightGaugeData,
-  "8": fabricationAsPerDesignData,
-  "9": bentoniteTankData,
+  "8": bentoniteTankData,
+  "9": fabricationAsPerDesignData,
+  
 };
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => {
