@@ -130,7 +130,7 @@ const ProductDetailsPage = () => {
                   <img
                     src={product.heroImage}
                     alt={product.heading}
-                    className="h-56 w-full object-contain sm:h-64 lg:h-[28rem]"
+                    className="h-56 w-full object-contain sm:h-64 lg:h-112"
                   />
                 </div>
 
@@ -150,7 +150,7 @@ const ProductDetailsPage = () => {
                   <img
                     src={product.secondaryImage}
                     alt={`${product.heading} detail`}
-                    className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
+                    className="h-72 w-full object-contain sm:h-80 lg:h-112"
                   />
                 </div>
                 {product.cta2?.label ? (
@@ -188,7 +188,7 @@ const ProductDetailsPage = () => {
                     <img
                       src={product.tertiaryImage}
                       alt={`${product.heading} detail`}
-                      className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
+                      className="h-72 w-full object-contain sm:h-80 lg:h-112"
                     />
                   </div>
                   {product.cta3?.label ? (

@@ -62,7 +62,7 @@ const Navbar = () => {
                   uppercase
                 />
                 <div
-                  className={`absolute -bottom-5 left-0 h-[4px] bg-white transition-all duration-300 ${
+                  className={`absolute -bottom-5 left-0 h-1 bg-white transition-all duration-300 ${
                     isActive ? "w-full" : "w-0 group-hover:w-full"
                   }`}
                 />

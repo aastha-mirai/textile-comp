@@ -40,7 +40,7 @@ const ProjectGallery = () => {
       </div>
       <div className="flex md:flex-wrap overflow-x-auto md:overflow-visible items-center md:justify-center w-auto ml-6 md:mx-0 gap-3 my-8">
         {images.slice(0, 7).map((img, index) => (
-          <div key={index} className="h-84 flex-shrink-0">
+          <div key={index} className="h-84 shrink-0">
             <img
               src={img}
               className="h-full w-auto object-cover"
