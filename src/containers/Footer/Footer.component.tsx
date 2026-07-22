@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                 <Link key={link.to} to={link.to}>
                   <div className="group inline-block">
                     <Typography
-                      variant="caption"
+                      variant="body"
                       color="white"
                       text={link.text}
                       underline
@@ -98,14 +98,14 @@ const Footer: React.FC = () => {
             <button
               type="button"
               onClick={() => handleAction(addressInfo)}
-              className="flex items-center gap-1 cursor-pointer"
+              className="flex gap-1 cursor-pointer"
             >
               <div className="mr-2">
                 <Icon icon={addressInfo.icon} size={20} color="white" />
               </div>
               <div className="flex flex-col text-left">
                 <Typography
-                  variant="caption"
+                  variant="body"
                   text={addressInfo.description}
                   color="white"
                 />

@@ -35,7 +35,7 @@ import product9Img3 from "@assets/imgs/products-images/product-9-image3.webp";
 import { getWhatsAppProductLink } from "@utils/constants";
 
 export const glueKettleData: ProductPageData = {
-  heading: "Plywood Glue Kettle Machine / Resin Reactor for Plywood Industry",
+  heading: "Plywood Glue Kettle",
   description:
     "Our heavy-duty Glue Kettle, also known as a Resin Reactor or Glue Cooking Tank, is an essential piece of equipment for any plywood and blockboard manufacturing unit. It is specifically engineered for the preparation of high-quality adhesives used in wood panel production.",
   heroImage: product1Img1,
@@ -110,7 +110,7 @@ export const glueKettleData: ProductPageData = {
 };
 
 export const storageTankData: ProductPageData = {
-  heading: "MS Storage Tank / Mild Steel Storage Tank",
+  heading: "MS Storage Tank",
   description:
     "We manufacture and supply high-quality Mild Steel (MS) Storage Tanks designed for safe and efficient storage of water, chemicals, oils, and other industrial liquids. These tanks are widely used across industries such as water treatment, manufacturing, pharmaceuticals, food processing, and chemical plants.",
 
@@ -486,7 +486,7 @@ export const chimneyData: ProductPageData = {
 };
 
 export const linearCasingPipeData: ProductPageData = {
-  heading: "Linear Casing Pipe/Borewell Pipe",
+  heading: "Borewell Pipe",
   description:
     "We manufacture and supply high-precision Linear Casting Pipe designed for accurate linear measurement in industrial and engineering applications. These Pipe are widely used in manufacturing units, quality inspection departments, machine shops, and fabrication industries where dimensional accuracy is essential.",
 

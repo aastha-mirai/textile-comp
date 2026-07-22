@@ -25,8 +25,9 @@ const productDataMap: Record<string, ProductPageData> = {
   "5": msHopperData,
   "6": linearCasingPipeData,
   "7": heightGaugeData,
-  "8": fabricationAsPerDesignData,
-  "9": bentoniteTankData,
+  "8": bentoniteTankData,
+  "9": fabricationAsPerDesignData,
+  
 };
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => {
@@ -129,7 +130,7 @@ const ProductDetailsPage = () => {
                   <img
                     src={product.heroImage}
                     alt={product.heading}
-                    className="h-56 w-full object-contain sm:h-64 lg:h-[28rem]"
+                    className="h-56 w-full object-contain sm:h-64 lg:h-112"
                   />
                 </div>
 
@@ -149,7 +150,7 @@ const ProductDetailsPage = () => {
                   <img
                     src={product.secondaryImage}
                     alt={`${product.heading} detail`}
-                    className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
+                    className="h-72 w-full object-contain sm:h-80 lg:h-112"
                   />
                 </div>
                 {product.cta2?.label ? (
@@ -187,7 +188,7 @@ const ProductDetailsPage = () => {
                     <img
                       src={product.tertiaryImage}
                       alt={`${product.heading} detail`}
-                      className="h-72 w-full object-contain sm:h-80 lg:h-[28rem]"
+                      className="h-72 w-full object-contain sm:h-80 lg:h-112"
                     />
                   </div>
                   {product.cta3?.label ? (

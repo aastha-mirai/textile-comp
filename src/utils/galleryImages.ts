@@ -27,6 +27,30 @@ import pic26 from "@assets/imgs/gallery/photo-26.webp";
 import pic27 from "@assets/imgs/gallery/photo-27.webp";
 import pic28 from "@assets/imgs/gallery/photo-28.webp";
 import pic29 from "@assets/imgs/gallery/photo-29.png";
+import pic30 from "@assets/imgs/gallery/photo-30.jpeg";
+import pic31 from "@assets/imgs/gallery/photo-31.jpeg";
+import pic32 from "@assets/imgs/gallery/photo-32.jpeg";
+import pic33 from "@assets/imgs/gallery/photo-33.jpeg";
+import pic34 from "@assets/imgs/gallery/photo-34.jpeg";
+import pic35 from "@assets/imgs/gallery/photo-35.jpeg";
+import pic36 from "@assets/imgs/gallery/photo-36.jpeg";
+import pic37 from "@assets/imgs/gallery/photo-37.jpeg";
+import pic38 from "@assets/imgs/gallery/photo-38.jpeg";
+import pic39 from "@assets/imgs/gallery/photo-39.jpeg";
+import pic40 from "@assets/imgs/gallery/photo-40.jpeg";
+import pic41 from "@assets/imgs/gallery/photo-41.jpeg";
+import pic42 from "@assets/imgs/gallery/photo-42.jpeg";
+import pic43 from "@assets/imgs/gallery/photo-43.jpeg";
+import pic44 from "@assets/imgs/gallery/photo-44.jpeg";
+import pic45 from "@assets/imgs/gallery/photo-45.jpeg";
+import pic46 from "@assets/imgs/gallery/photo-46.jpeg";
+import pic47 from "@assets/imgs/gallery/photo-47.jpeg";
+import pic48 from "@assets/imgs/gallery/photo-48.jpeg";
+import pic49 from "@assets/imgs/gallery/photo-49.jpeg";
+import pic50 from "@assets/imgs/gallery/photo-50.jpeg";
+import pic51 from "@assets/imgs/gallery/photo-51.jpeg";
+import pic52 from "@assets/imgs/gallery/photo-52.jpeg";
+import pic53 from "@assets/imgs/gallery/photo-53.jpeg";
 
 export const galleryImages = [
   pic1,
@@ -58,4 +82,28 @@ export const galleryImages = [
   pic27,
   pic28,
   pic29,
+  pic30,
+  pic31,
+  pic32,
+  pic33,
+  pic34,
+  pic35,
+  pic36,
+  pic37,
+  pic38,
+  pic39,
+  pic40,
+  pic41,
+  pic42,
+  pic43,
+  pic44,
+  pic45,
+  pic46,
+  pic47,  
+  pic48,
+  pic49,
+  pic50,
+  pic51,
+  pic52,
+  pic53,
 ];

@@ -12,11 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = (props) => {
       className="flex gap-4 justify-between w-xs min-h-100 cursor-pointer"
     >
       <div className="flex flex-col text-center shadow-lg rounded-sm overflow-hidden">
-        <div className="h-80 border-b border-offWhite">
+        <div className="h-80 border-b border-offWhite pb-1">
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain border-b border-offWhite"
           />
         </div>
 

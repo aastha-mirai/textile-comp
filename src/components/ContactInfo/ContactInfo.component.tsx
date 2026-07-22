@@ -69,7 +69,7 @@ export const ContactInfo = ({ limit }: ContactDataProps) => {
           type="button"
           key={item.id}
           onClick={() => handleAction(item)}
-          className="flex items-center gap-2 cursor-pointer"
+          className="flex text-start gap-2 cursor-pointer"
         >
           <Icon icon={item.icon} size={16} color="white" />
           <Typography

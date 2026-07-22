@@ -37,18 +37,14 @@ const AboutUs: React.FC<AboutProps> = ({ isHomeVariant = false }) => {
               variant={isMobile ? "caption" : "subtitle"}
               text={
                 <>
-                  With 10+ years of experience in MS fabrication, we deliver
-                  high-quality storage tanks, kettles, filter tanks, and
-                  industrial equipment.Our modern facility in Kachnar, Uttar
-                  Pradesh, and skilled team ensure precision and reliability in
-                  every project.
+                  With over 10 years of experience in MS fabrication, we manufacture storage tanks, kettles, filter tanks, process equipment, and custom industrial products tailored to client drawings, BOQ, and technical specifications.
                   <br />
                   <br />
-                  We specialize in custom fabrication as per drawings and BOQ,
-                  catering to diverse industrial requirements. GST & MSME
-                  registered, we handle bulk orders and tender projects with a
-                  strong commitment to timely delivery.
-                </>
+                  Based in Patna City, Bihar, our modern manufacturing facility and skilled team deliver precision-engineered solutions for the chemical, pharmaceutical, food processing, water treatment, engineering, and manufacturing industries. Whether it's a custom fabrication job, bulk order, or large-scale industrial project, we ensure exceptional quality, durability, safety, and performance at every stage.
+                  <br />
+                  <br />
+                  As a GST and MSME-registered company, we are equipped to execute commercial projects and government tenders with strict quality control, competitive pricing, transparent communication, and on-time delivery. Our goal is to provide reliable, cost-effective manufacturing solutions that build lasting partnerships with our clients.
+                  </>
               }
               color="lightGray"
             />

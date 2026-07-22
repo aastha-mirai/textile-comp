@@ -26,7 +26,7 @@ export const contactInfo: ContactInfoProps[] = [
     id: 3,
     icon: "location",
     type: "location",
-    title: "Location",
-    description: "Kachnar, Uttar Pradesh",
+    title: "Address",
+    description: "Opposite Kallu Tondon Sweets, Mahadev Asthan, Patna City, Bihar, PIN Code: 800006",
   },
 ];
